@@ -1,6 +1,5 @@
-# JaquelineFlores
+# Práctica elaboración de un proyecto de genómica aplicada.
 
-**Título:** Práctica elaboración de un proyecto de genómica aplicada.  
 **Autor:**
 Jaqueline Flores Salinas
 Mexicana
