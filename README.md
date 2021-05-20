@@ -1,4 +1,4 @@
-# Práctica elaboración de un proyecto de genómica aplicada.
+# Práctica para la elaboración de un proyecto de genómica aplicada.
 
 **Autor:**
 Jaqueline Flores Salinas
