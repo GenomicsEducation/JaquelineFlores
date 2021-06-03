@@ -100,8 +100,8 @@ Para ingresar de manera remota a POMEO debemos abrir la aplicación de PuTTY que
 Realizar la instalación de Miniconda tal como se muestra en la imagen de abajo, utilizando el comando e información siguiente:   
 `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`  
 `bash Miniconda3-latest-Linux-x86_64.sh`  
-_Nota: en mi caso aparece un error debido a que ya contaba con la instalación de miniconda._  
-![CONDA](https://user-images.githubusercontent.com/80992964/120700417-4011e900-c477-11eb-86a7-9425ab747ce6.png)  
+_Nota: En mi caso aparece un error debido a que ya contaba con la instalación de miniconda._  
+![CONDA](https://user-images.githubusercontent.com/80992964/120702478-bc0d3080-c479-11eb-8b61-a89007f3e758.png)  
 
 ### **Nano**  
 Realizar la instalación del paquete nano utilizando el comando e información siguiente: `conda install -c conda-forge nano`  
