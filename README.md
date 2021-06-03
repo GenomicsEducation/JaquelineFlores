@@ -7,6 +7,7 @@ Jaqueline Flores Salinas
  - Profesional en procesamiento de patentes    
    
 ## **Información sobre Genomas y Bioproyectos**  
+#### Elección de una especie de importancia económica en producción animal.  
 _Sus scrofa domesticus_  
 ![Sus scrofa(pig)](https://biologydictionary.net/wp-content/uploads/2020/08/Young-domestic-pig.jpg)
 
