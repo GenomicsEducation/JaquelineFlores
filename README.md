@@ -57,4 +57,19 @@ Enlace de acceso: [Refseq](https://www.ncbi.nlm.nih.gov/nuccore/EU839903.1)
 |---------|--------|-------|--------|-------------|
 | ERR4419514 | 35,910,385 | 10.8G | 4Gb | 2020-09-15 |  
 
-Enlace de acceso: [Bioproyecto SRA](https://www.ncbi.nlm.nih.gov/sra/ERX4361651[accn])
+**_Datos del proyecto_**  
+
+| Resource Name | Number of Links |  
+| ------ | ------- |  
+| Experimentos SRA | 9 |  
+| BioSambple | 9 |  
+
+**_Detalles de datos SRA_**  
+
+| Parámetro	| Valor | 
+| ------- | ------- |
+| Volumen de datos | Gbases	92 |  
+| Volumen de datos | Mbytes	36711 |
+
+Enlace de acceso: [Bioproyecto SRA](https://www.ncbi.nlm.nih.gov/sra/ERX4361651[accn])  
+
