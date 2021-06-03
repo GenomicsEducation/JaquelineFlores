@@ -115,5 +115,5 @@ Colocar la siguiente información en el documento:
 `# Descarga y descomprime SRA Toolkit`  
 `wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-centos_linux64.tar.gz  
 tar -xzf sratoolkit.current-centos_linux64.tar.gz`  
-_Notas: Asegurate de que la información que le sigue a `wget` quede como una sola línea, tal como se muestra en la imagen, ya que si no aparecera un error al correr el archivo. También asegurate de guardar los cambios utilizando `ctrl + o`, para salir del documento utiliza `ctrl + x`._  
+_Notas: Asegurate de que la información que le sigue a `wget` quede como una sola línea, como se muestra en la imagen. También asegurate de guardar los cambios utilizando `ctrl + o`, para salir del documento utiliza `ctrl + x`._  
 ![SRAtoolkit](https://user-images.githubusercontent.com/80992964/120700554-68014c80-c477-11eb-9fb7-d47787d4ebb2.png)  
