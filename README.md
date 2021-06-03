@@ -7,6 +7,9 @@ Jaqueline Flores Salinas
  - Profesional en procesamiento de patentes    
    
 ## **Información sobre Genomas y Bioproyectos**  
+_Sus scrofa domesticus_  
+![Ovis aries (sheep)](https://www.google.com/imgres?imgurl=https%3A%2F%2Fbiologydictionary.net%2Fwp-content%2Fuploads%2F2020%2F08%2FYoung-domestic-pig.jpg&imgrefurl=https%3A%2F%2Fbiologydictionary.net%2Fboar%2F&tbnid=mXv12fjyNpajxM&vet=12ahUKEwif84PFzfvwAhWa6KwKHVfwAO8QMygtegUIARCvAg..i&docid=vLoZjit-g_YMvM&w=500&h=250&q=sus%20scrofa%20domesticus&ved=2ahUKEwif84PFzfvwAhWa6KwKHVfwAO8QMygtegUIARCvAg)
+
 ### **Assembly**  
 **Número de acceso:** ASM1795798v1  
 **Organismo:** _Sus scrofa domesticus_  
