@@ -34,11 +34,9 @@ Enlace de acceso: [Refseq](https://www.ncbi.nlm.nih.gov/nuccore/EU839903.1)
 **Descripción:** Diseño general: el experimento consistió en seis muestras de ARN, incluidas tres muestras de ELF-EMF expuestas, y tres muestras de muestras expuestas simuladamente.Tecnología de secuenciación: RNA-seq utilizada para descubrir alteraciones transcripcionales que ocurren en el miometrio porcino después de 2h de duración. de tratamiento ELF-EMF a una frecuencia de 50 Hz.  
 
 **_Datos de experimento_**
-| Número de acceso | PRJEB42848 | 
-| ------------- | ------------- |
-| Alcance | Monoaislado |  
-| Fecha de envio | 23-Apr-2021 |
-| Enviado por | UNIVERSITY OF WARMIA AND MAZURY |  
+| Número de acceso | Alcance | Fecha de envio | Enviado por |
+| ------------- | ------------- | ------------- | ------------- |
+| PRJEB42848 | Monoaislado | 23-Apr-2021 | UNIVERSITY OF WARMIA AND MAZURY |  
 
 **_Librería_**  
 | Instrumento | Estrategia | Fuente | Selección | Diseño |
