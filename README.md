@@ -109,7 +109,7 @@ Realizar la instalación del paquete nano utilizando el comando e información s
 
 ### **SRA toolkit**  
 Realizar la instalación del SRA toolkit utilizando el comando e información siguiente:  
-Abrir primero un documento llamado script1.sh: `nano script1.sh` 
+Abrir primero un documento llamado script1.sh: `nano script1.sh`  
 Colocar la siguiente información en el documento:  
 `# !/bin/bash`  
 `# Descarga y descomprime SRA Toolkit`  
