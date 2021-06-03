@@ -119,7 +119,7 @@ _Notas: Asegurate de que la información que le sigue a `wget` quede como una so
 ![SRAtoolkit](https://user-images.githubusercontent.com/80992964/120700554-68014c80-c477-11eb-9fb7-d47787d4ebb2.png)  
 
 ## **Práctica de SHELL y LINUX**  
-### **Comandos y su uso**  
+### **_Comandos y su uso_**  
 
 ## **Práctica de descarga de secuencias NGS con SRA toolkit**  
-### **Comandos y su uso**  
+### **_Comandos y su uso_**  
