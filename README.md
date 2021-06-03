@@ -8,7 +8,7 @@ Jaqueline Flores Salinas
    
 ## **Información sobre Genomas y Bioproyectos**  
 _Sus scrofa domesticus_  
-![Ovis aries (sheep)](https://biologydictionary.net/wp-content/uploads/2020/08/Young-domestic-pig.jpg)
+![Sus scrofa(pig)](https://biologydictionary.net/wp-content/uploads/2020/08/Young-domestic-pig.jpg)
 
 ### **Assembly**  
 **Número de acceso:** ASM1795798v1  
