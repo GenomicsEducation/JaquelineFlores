@@ -39,22 +39,22 @@ Enlace de acceso: [Assembly](https://www.ncbi.nlm.nih.gov/assembly/GCA_017957985
 Enlace de acceso: [Refseq](https://www.ncbi.nlm.nih.gov/nuccore/EU839903.1)
 
 ### **Bioproyecto SRA**  
-**Título:** _"Study of the extremely low-frequency electromagnetic field (ELF-EMF, 50 Hz, 2 h) responses of pig myometrium: Control vs. ELF-EMF."_  
-**Descripción:** Diseño general: el experimento consistió en seis muestras de ARN, incluidas tres muestras de ELF-EMF expuestas, y tres muestras de muestras expuestas simuladamente.Tecnología de secuenciación: RNA-seq utilizada para descubrir alteraciones transcripcionales que ocurren en el miometrio porcino después de 2h de duración. de tratamiento ELF-EMF a una frecuencia de 50 Hz.  
+**Título:** _"RNA samples in Hypothalamus of Pigs."_  
+**Descripción:** Se eligieron ejemplares en tres etapas de la pubertad: antes, en y después de esta etapa. Se seleccionaron como prepuberes tres ejemplares de alrededor de 160 días sin signos puberales, tres ejemplares que presentaron los primeros signos púberes se seleccionaron como en la pubertad y tres ejemplares a los 14 días después de la fase puberal se seleccionaron como pospúberes.
 
 **_Datos de experimento_**
 | Número de acceso | Alcance | Fecha de envio | Enviado por |
 | ------------- | ------------- | ------------- | ------------- |
-| PRJEB42848 | Monoaislado | 23-Apr-2021 | UNIVERSITY OF WARMIA AND MAZURY |  
+| PRJEB39729 | Monoaislado | 15-Sep-2020 | YUAN |  
 
 **_Librería_**  
 | Instrumento | Estrategia | Fuente | Selección | Diseño |
 |----------------|--------|-------|--------|-------------|
-| Illumina NovaSeq 6000 | RNA-Seq | Transcriptómica | ADNc | Pareado |  
+| Illumina HiSeq 2000 | RNA-Seq | Transcriptómica | ADNc | Pareado |  
 
 **_Datos de análisis_**
 | Corrida | Puntos | Bases | Tamaño | Publicación |
 |---------|--------|-------|--------|-------------|
-| ERR5416414 | 25,422,944 | 7.7G | 2.2Gb | 2021-04-04 |  
+| ERR4419514 | 35,910,385 | 10.8G | 4Gb | 2020-09-15 |  
 
-Enlace de acceso: [Bioproyecto SRA](https://www.ncbi.nlm.nih.gov/sra/ERX5200982[accn])
+Enlace de acceso: [Bioproyecto SRA](https://www.ncbi.nlm.nih.gov/sra/ERX4361651[accn])
