@@ -8,18 +8,23 @@ Jaqueline Flores Salinas
    
 ## **Información sobre Genomas y Bioproyectos**  
 ### **Assembly**  
-**Organismo:** _Sus scrofa (domestica)_  
-**Raza:** Duroc  
+**Número de acceso:** ASM1795798v1  
+**Organismo:** _Sus scrofa domesticus_  
+**Raza:** Meishan  
 **Sexo:** Femenino  
 **Nivel de ensamblaje:** Cromosomas completos  
+**Autor:** Chinese Academy of Agricultural Sciences  
+**Fecha de envio:** Abril 15 de 2021
 
-| Tamaño total de la secuencia | 2,501,912,388 | 
+
+| Tamaño total de la secuencia | 2,510,037,796 |
 | ------------- | ------------- |
-| Número de scaffolds | 706 |  
-| Número de contigs  | 1,118 |  
-| Número total de cromosomas | 21 |  
+| Número de scaffolds | 253 |
+| Número de contigs  | 394 | 
+| Número total de cromosomas | 19 |
+| Secuencias sin ubicar | 234 |
 
-Enlace de acceso: [Assembly](https://www.ncbi.nlm.nih.gov/assembly/GCF_000003025.6)
+Enlace de acceso: [Assembly](https://www.ncbi.nlm.nih.gov/assembly/GCA_017957985.1/)
 
 ### **Refseq**  
 **Nombre:** _Sus scrofa domestica_ gen de la proteína GDF5, secuencia parcial  
