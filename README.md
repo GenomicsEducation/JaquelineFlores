@@ -49,4 +49,5 @@ Enlace de acceso: [Refseq](https://www.ncbi.nlm.nih.gov/nuccore/EU839903.1)
 | Corrida | Puntos | Bases | Tamaño | Publicación |
 |---------|--------|-------|--------|-------------|
 | ERR5416414 | 25,422,944 | 7.7G | 2.2Gb | 2021-04-04 |  
+
 Enlace de acceso: [Bioproyecto SRA](https://www.ncbi.nlm.nih.gov/sra/ERX5200982[accn])
