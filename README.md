@@ -77,5 +77,6 @@ Enlace de acceso: [Bioproyecto SRA](https://www.ncbi.nlm.nih.gov/sra/ERX4361651[
 ## **Descarga, instalación y configuración de programas**  
 ### **Software para acceso remoto y transferencia de arcgivos**  
 #### **_PuTTY_**  
+Para la instalación de este software deberá hacer una búsqueda simple en su navegador, identificar la página web mostrada en el punto 1 de la imagen aquí adjunta (abajo) e ingresar en ella. Deberá buscar en la página la opción "Download PuTTY" y, tal como se muestra en el punto 2 de la imagen de abajo, dar click en "here". Eso lo enviara a una sección similar a lo que se ve en el punto 3 de la imagen de abajo, ahí deberá descargar el software de acuerdo a las características de su conmutador.
 ![PuTTY](https://user-images.githubusercontent.com/80992964/120689035-45683700-c469-11eb-82cf-a4a730a938e2.png)
 
