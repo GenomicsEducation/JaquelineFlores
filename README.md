@@ -74,3 +74,8 @@ Enlace de acceso: [Refseq](https://www.ncbi.nlm.nih.gov/nuccore/EU839903.1)
 **Notas:** Documento con metadatos disponible en la sección superior de este repositorio como carpeta _"Metadata"_  
 Enlace de acceso: [Bioproyecto SRA](https://www.ncbi.nlm.nih.gov/sra/ERX4361651[accn])  
 
+## **Descarga, instalación y configuración de programas**  
+### **Software para acceso remoto y transferencia de arcgivos**  
+#### **_PuTTY_**  
+![PuTTY](https://user-images.githubusercontent.com/80992964/120689035-45683700-c469-11eb-82cf-a4a730a938e2.png)
+
