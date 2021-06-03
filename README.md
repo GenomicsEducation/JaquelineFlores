@@ -98,8 +98,8 @@ Para ingresar de manera remota a POMEO debemos abrir la aplicación de PuTTY que
 ## **Instalación y configuración de paquetes**  
 ### **CONDA**  
 Realizar la instalación de Miniconda tal como se muestra en la imagen de abajo, utilizando el comando e información siguiente:   
-`wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh  
-bash Miniconda3-latest-Linux-x86_64.sh`  
+`wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`  
+`bash Miniconda3-latest-Linux-x86_64.sh`  
 _Nota: en mi caso aparece un error debido a que ya contaba con la instalación de miniconda._  
 ![CONDA](https://user-images.githubusercontent.com/80992964/120700417-4011e900-c477-11eb-86a7-9425ab747ce6.png)  
 
@@ -111,9 +111,9 @@ Realizar la instalación del paquete nano utilizando el comando e información s
 Realizar la instalación del SRA toolkit utilizando el comando e información siguiente:  
 Abrir primero un documento llamado script1.sh: `nano script1.sh` 
 Colocar la siguiente información en el documento:  
-`# !/bin/bash  
-# Descarga y descomprime SRA Toolkit  
-wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-centos_linux64.tar.gz  
+`# !/bin/bash`  
+`# Descarga y descomprime SRA Toolkit`  
+`wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-centos_linux64.tar.gz  
 tar -xzf sratoolkit.current-centos_linux64.tar.gz`  
-_Notas: Asegurate de guardar los cambios utilizando `ctrl + o`, para salir del documento utiliza `ctrl + x`.
-![SRAtoolkit](https://user-images.githubusercontent.com/80992964/120700554-68014c80-c477-11eb-9fb7-d47787d4ebb2.png)
+_Notas: Asegurate de que toda la información que le sigue a `wget` quede como una sola línea, ya que si no aparecera un error al correr el archivo. También asegurate de guardar los cambios utilizando `ctrl + o`, para salir del documento utiliza `ctrl + x`.  
+![SRAtoolkit](https://user-images.githubusercontent.com/80992964/120700554-68014c80-c477-11eb-9fb7-d47787d4ebb2.png)  
