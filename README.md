@@ -128,36 +128,36 @@ Los script son pequeños archivos con un conjunto de instrucciones para realizar
 - Evalua el performance de la CPU, similar al monitor del sistema: `top`  
 - Para salir: `q`  
 - Para crear un director: `mkdir`  
-- EJEMPLO - Crear un directorio llamado tesis: `mkdir tesis`  
+   - EJEMPLO - Crear un directorio llamado tesis: `mkdir tesis`  
 - Para cambiar de directorio: `cd`  
-- EJEMPLO - Para cambiar al directorio llamado tesis: `cd tesis`  
+   - EJEMPLO - Para cambiar al directorio llamado tesis: `cd tesis`  
 - Para volver al directorio anterior: `cd ..`  
 - Para almacenar información de un espacio a otro: `>`  
-- EJEMPLO - Para almacenar espacio del sistema en un archivo de formato ".txt": `df -hP > espacio_libre_pomeo.txt`  
+   - EJEMPLO - Para almacenar espacio del sistema en un archivo de formato ".txt": `df -hP > espacio_libre_pomeo.txt`  
 - Para leer datos de un archivo e imprimir su contenido: `cat`  
-- EJEMPLO - `cat espacio_libre.txt`  
+   - EJEMPLO - `cat espacio_libre.txt`  
 - Para leer datos de un archivo sin imprimir su contenido: `less`  
-- EJEMPLO - `less espacio_libre.txt`  
+   - EJEMPLO - `less espacio_libre.txt`  
 - Para contar líneas, palabras y carcateres de un fichero: `wc`  
-- EJEMPLO - `wc espacio_libre.txt`  
+   - EJEMPLO - `wc espacio_libre.txt`  
 - Para imprimir un listado de objetos en un directorio: `ls`  
 - Entrega información con mas detalle de los objetos y de un tamaño que sea legible por humanos: `ls -l -h`  
 - Para remover un fichero o directorio forzando la acción: `rm -r`  
 - Imprime todas las líneas de comando ejecutadas en la terminal: `history`  
 - Para cerrar sesión/cerrar PuTTY de forma correcta: `exit`  
 - Descargar repositorios: `wget`  
-- EJEMPLO - Descargar repositorio de anaconda: `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`  
+   - EJEMPLO - Descargar repositorio de anaconda: `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`  
 - Ejecutar scripts: `bash nombre_de_archivo.sh`  
-- EJEMPLO - Ejecutar anaconda: `bash Miniconda3-latest-Linux-x86_64.sh`  
+   - EJEMPLO - Ejecutar anaconda: `bash Miniconda3-latest-Linux-x86_64.sh`  
 - Ejecución en el proceso actual: `source`  
-- EJEMPLO - Activación de miniconda: `source ~/.bashrc`  
+   - EJEMPLO - Activación de miniconda: `source ~/.bashrc`  
 - Revisión de contenidos (funciona igual que `ls`): `list`  
-- EJEMPLO - Revisión de contenidos de conda: `conda list`  
+   - EJEMPLO - Revisión de contenidos de conda: `conda list`  
 - Revisión de versión de repositorio descargado: `--version`  
-- EJEMPLO - Revisión de versión conda: `conda --version`  
+   - EJEMPLO - Revisión de versión conda: `conda --version`  
 - Instalación de nano en conda: `conda install -c conda-forge nano`  
 - Creación de un script: `nano nombredelscript.sh` 
-- EJEMPLO - Creación de script llamado script1: `nano script1.sh`
+   - EJEMPLO - Creación de script llamado script1: `nano script1.sh`
 - Guardar cambios en script: `ctrl + o`, seguido un `ENTER`  
 - Salir del script: `ctrl + x`  
 
