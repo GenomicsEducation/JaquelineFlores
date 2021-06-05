@@ -109,7 +109,7 @@ Realizar la instalación del paquete nano utilizando el comando e información s
 
 ### **SRA toolkit**  
 Realizar la instalación del SRA toolkit utilizando el comando e información siguiente:  
-Abrir primero un documento llamado script1.sh: `nano script1.sh`  
+Con nano crear un documento llamado script1.sh : `nano script1.sh`  
 Colocar la siguiente información en el documento:  
 `# !/bin/bash`  
 `# Descarga y descomprime SRA Toolkit`  
@@ -117,6 +117,8 @@ Colocar la siguiente información en el documento:
 tar -xzf sratoolkit.current-centos_linux64.tar.gz`  
 _Notas: Asegurate de que la información que le sigue a `wget` quede como una sola línea, como se muestra en la imagen. También asegurate de guardar los cambios utilizando `ctrl + o`, para salir del documento utiliza `ctrl + x`._  
 ![SRAtoolkit](https://user-images.githubusercontent.com/80992964/120700554-68014c80-c477-11eb-9fb7-d47787d4ebb2.png)  
+
+Script1.sh para descarga [aquí](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Scripts)
 
 ## **Práctica de SHELL y LINUX**  
 Los script son pequeños archivos con un conjunto de instrucciones para realizar alguna tarea o proceso bioinformático, es decir son programas. El uso de scripts nos permite automatizar y acelerar el trabajo de bioinformática. Se suelen escribir en un editor de texto y se almacenan en el directorio de trabajo con un nombre que lleva la extención ".sh" (ej. script_alineamiento.sh). Adicionalmente, un editor de texto, como lo es nano, es un sencillo programa informático que nos permite crear y modificar archivos digitales.  
