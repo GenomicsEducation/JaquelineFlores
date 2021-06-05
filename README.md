@@ -183,7 +183,7 @@ Los script son pequeños archivos con un conjunto de instrucciones para realizar
    - Dirigirse primero al directorio /sratoolkit.2.10.5-centos_linux64: `cd /sratoolkit.2.10.5-centos_linux64`  
    - Configurar SRAtoolkit para trabajar en la nube: `bin/vdb-config --interactive`  
 
-**_TSimulación: trabajando con un archivo del SRA (archivos SRR390728 y SRR6019464)_**
+**_Simulación: trabajando con un archivo del SRA (archivos SRR390728 y SRR6019464)_**
 - Para probar que SRAToolkit está trabajando correctamente: `fastq-dump --stdout SRR390728 | head -n 8`  
 - Descarga y muestra el contenido de las 5 primeras secuencias del archivo: `fastq-dump -X 5 -Z SRR6019464`  
 - Descarga el contenido de las 5 primeras secuencias y las almacena en un archivo con formato fastq: `fastq-dump -X 5 SRR6019464`  
