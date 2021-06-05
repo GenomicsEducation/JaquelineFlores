@@ -158,17 +158,17 @@ Los script son pequeños archivos con un conjunto de instrucciones para realizar
 - Instalación de nano en conda: `conda install -c conda-forge nano`  
 - Creación de un script: `nano nombredelscript.sh` 
 - EJEMPLO - Creación de script llamado script1: `nano script1.sh`
-- Guardar cambios en script: ctrl + o, seguido un ENTER  
-- Salir del script: ctrl + x  
+- Guardar cambios en script: `ctrl + o`, seguido un `ENTER`  
+- Salir del script: `ctrl + x`  
 
 ### **_Atajos_**
-- Moverte por las líneas ejecutadas en la terminal: flecha arriba/abajo  
-- Usa el tabulador como un atajo para llamar al fichero: tab  
-- Mueve el cursor al comienzo de la línea actual: ctrl-a  
-- Mueve el cursor al final de la línea actual: ctrl-e  
-- Borra desde el cursor hasta el final de la línea: ctrl-k  
-- Borra desde el cursor hasta el inicio de la línea: ctrl-u  
-- Borra la palabra inmediatamente detras del cursor: ctrl-w  
+- Moverte por las líneas ejecutadas en la terminal: `flecha arriba/abajo`  
+- Usa el tabulador como un atajo para llamar al fichero: `tab`  
+- Mueve el cursor al comienzo de la línea actual: `ctrl-a`  
+- Mueve el cursor al final de la línea actual: `ctrl-e`  
+- Borra desde el cursor hasta el final de la línea: `ctrl-k`  
+- Borra desde el cursor hasta el inicio de la línea: `ctrl-u`  
+- Borra la palabra inmediatamente detras del cursor: `ctrl-w`  
 
 ## **Práctica de descarga de secuencias NGS con SRA toolkit**  
 ### **_Comandos y su uso_**  
@@ -183,9 +183,9 @@ Los script son pequeños archivos con un conjunto de instrucciones para realizar
    - Dirigirse primero al directorio /sratoolkit.2.10.5-centos_linux64: `cd /sratoolkit.2.10.5-centos_linux64`  
    - Configurar SRAtoolkit para trabajar en la nube: `bin/vdb-config --interactive`  
 
-**_Trabajando con un archivo del SRA (archivos SRR390728 y SRR6019464)_**
+**_TSimulación: trabajando con un archivo del SRA (archivos SRR390728 y SRR6019464)_**
 - Para probar que SRAToolkit está trabajando correctamente: `fastq-dump --stdout SRR390728 | head -n 8`  
 - Descarga y muestra el contenido de las 5 primeras secuencias del archivo: `fastq-dump -X 5 -Z SRR6019464`  
 - Descarga el contenido de las 5 primeras secuencias y las almacena en un archivo con formato fastq: `fastq-dump -X 5 SRR6019464`  
 - Descarga la biomuestra completa: `fastq-dump --gzip --split-3 SRR6019464`  
-- Explorar la muesta y revisar el número de read descargados: `zcat SRR6019464.fastq.gz | echo $((`wc -l`/4))`  
+- Explorar la muesta y revisar el número de read descargados: `zcat SRR6019464.fastq.gz | echo $((``wc -l``/4))`  
