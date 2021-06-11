@@ -3,6 +3,7 @@ En el presente repositorio encontrarán diversas actividades realizadas durante 
 
 ## **Autor**  
 _Todas las actividades del presente repositorio son elaboradas por una servidora._  
+
 Jaqueline Flores Salinas
  - Mexicana  
  - Licenciado en Biotecnología Genómica  
