@@ -1,7 +1,6 @@
 # Práctica para la elaboración de un proyecto de genómica aplicada.
 
-### **Autor**  
-Jaqueline Flores Salinas  
+### **Autor:** _Jaqueline Flores Salinas_  
    
    
 ## **Información sobre Genomas y Bioproyectos**  
