@@ -27,3 +27,7 @@ En el archivo [Paquetes necesarios.md](https://github.com/GenomicsEducation/Jaqu
 En el archivo [Comandos y su uso.md](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Linux_Gen%C3%B3mica/Comandos%20y%20su%20uso.md) encontrarás información para una pequeña práctica de Shell y Linux, dónde se encuentra una lista de comandos y atajos, y se describe brevemente el uso de cada uno.  
 
 Por último, en el archivo [SRA_Descarga de secuencias NGS.md](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Linux_Gen%C3%B3mica/SRA_Descarga%20de%20secuencias%20NGS.md) encontrarás información para uuna pequeña práctica de descarga de secuencias NGS (Next Generation Sequencing) empleando el paquete _SRA toolkit_ previamente instalado.  
+
+
+## Práctica de Introducción al Análisis de Secuencias NGS.  
+La carpeta [Secuencias_NGS](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias%20NGS) contiene el archivo [Práctica de análisis.md](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Pr%C3%A1ctica%20de%20an%C3%A1lisis.md) dónde encontrarás la información necesaria para realizar una práctica para aprender a descargar secuencias, comprobar su integridad, realizar un análisis de control de calidad, terminando con el filtrado y poda de las secuencias.
