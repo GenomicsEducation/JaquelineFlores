@@ -1,6 +1,8 @@
-# Curso _Genética y Genómica Aplicada a la Producción Animal_.  
+# Genética y Genómica Aplicada a la Producción Animal.  
+En el presente repositorio encontrarán diversas actividades realizadas durante el curso Genética y Genómica Aplicada a la Producción Animal, del Doctorado en Biotecnología PUCV-UTSFM. En la sección actual se describe brevemente cada actividad y se incluyen enlaces para dirigirse a las carpetas correspondientes. En la sección superior encontrarán las carpetas aquí descritas.
 
 ## **Autor**  
+Todas las actividades del presente repositorio son elaboradas por una servidora.  
 Jaqueline Flores Salinas  
  - Mexicana  
  - Licenciado en Biotecnología Genómica  
