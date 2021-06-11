@@ -30,4 +30,4 @@ Por último, en el archivo [SRA_Descarga de secuencias NGS.md](https://github.co
 
 
 ## Práctica de Introducción al Análisis de Secuencias NGS.  
-La carpeta [Secuencias_NGS](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias%20NGS) contiene el archivo [Práctica de análisis.md](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Pr%C3%A1ctica%20de%20an%C3%A1lisis.md) dónde encontrarás la información necesaria para realizar una práctica para aprender a descargar secuencias, comprobar su integridad, realizar un análisis de control de calidad, terminando con el filtrado y poda de las secuencias.
+La carpeta [Secuencias_NGS](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias%20NGS) contiene el archivo [Práctica de análisis.md](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Pr%C3%A1ctica%20de%20an%C3%A1lisis.md) dónde encontrarás la información necesaria para realizar una práctica y aprender a descargar secuencias, comprobar su integridad, realizar un análisis de control de calidad, terminando con el filtrado y poda de las secuencias.
