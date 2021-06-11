@@ -17,8 +17,8 @@ Esta práctica incluye la elección de una especie de importancia económica en 
 En el archivo [Datos de genomas y bioproyectos.md](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Genomas_y_Bioproyectos/Datos%20de%20genomas%20y%20bioproyectos.md) de la carpeta [Genomas_y_Bioproyectos](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Genomas_y_Bioproyectos) de este repositorio, podrán encontrar la especie que yo elegí, la información de su genoma y un BioProyecto de mi elección.  
 
 
-## **Descarga, instalación y configuración de programas**  
-En los archivos de esta sección encontrarás la información necesaria para descargar, instalar y configurar los programas y paquetes necesarios para trabajar con secuencias genómicas. Todos los archivos se encuentran en la carpeta [Linux_Genómica](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Linux_Gen%C3%B3mica).
+## **Práctica de Introducción de Linux para Genómica**  
+En los archivos de esta práctica encontrarás la información necesaria para descargar, instalar y configurar los programas y paquetes necesarios para trabajar con secuencias genómicas. Todos los archivos se encuentran en la carpeta [Linux_Genómica](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Linux_Gen%C3%B3mica).
 
 En el archivo [Programas necesarios.md](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Linux_Gen%C3%B3mica/Programas%20necesarios.md) encontrarás información sobre la búsqueda y descarga de _PuTTY_, un software para acceso remoto SSH; de _WinSCP_, un software para transferencia de archivos vía FTP, y de _nano_, un editor de textos.
 
