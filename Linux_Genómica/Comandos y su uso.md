@@ -41,6 +41,16 @@ Los script son pequeños archivos con un conjunto de instrucciones para realizar
 - Guardar cambios en script: `ctrl + o`, seguido un `ENTER`  
 - Salir del script: `ctrl + x`  
 
+### **_Práctica para creación de script_**  
+1. Ingresa el siguiente comando en tu editor de textos `nano nombredelscript.sh`. Esto creará un archivo llamado "script1" con extensión ".sh", esta extensión indica que se trata de un script. Al dar enter al comando se abrira este archivo y en esta sección podrás escribir lo que quieras que contenga el script.  
+2. Para casos prácticos ingresa la siguiente información:  
+`# !/bin/bash`  
+`# Mi primer script`  
+`echo Curso de Genómica`  
+_Recuerda guardar con Ctrl+O, dar Enter y cerrrar con Ctrl+X_  
+3. Al salir del archivo regresaras al editor de texto dónde haz estado trabajando, ahora para verificar que todo este correcto, corre el script con el comando `bash script1.sh`.  
+_Podrás encontrar el script1.sh [aquí](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Linux_Gen%C3%B3mica/Scripts/script1.sh)_  
+
 ### **_Atajos_**
 - Moverte por las líneas ejecutadas en la terminal: `flecha arriba/abajo`  
 - Usa el tabulador como un atajo para llamar al fichero: `tab`  
