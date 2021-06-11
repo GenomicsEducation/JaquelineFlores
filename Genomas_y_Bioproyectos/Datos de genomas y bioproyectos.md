@@ -6,7 +6,7 @@ La presente práctica contiene cuatro secciones. En la primer sección se muestr
 
 ## **Información sobre Genomas y Bioproyectos**  
 ### **_Elección de una especie de importancia económica en producción animal._**  
-_Sus scrofa domesticus_  
+### _Sus scrofa domesticus_  
 ![Sus scrofa(pig)](https://biologydictionary.net/wp-content/uploads/2020/08/Young-domestic-pig.jpg)
 
 ### **Assembly**  
