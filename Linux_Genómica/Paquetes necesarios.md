@@ -26,4 +26,4 @@ tar -xzf sratoolkit.current-centos_linux64.tar.gz`
 _Notas: Asegurate de que la información que le sigue a `wget` quede como una sola línea, como se muestra en la imagen. También asegurate de guardar los cambios utilizando `ctrl + o`, para salir del documento utiliza `ctrl + x`._  
 ![SRAtoolkit](https://user-images.githubusercontent.com/80992964/120906534-d6810e80-c61f-11eb-846e-e39488d12f4f.png)  
 
-script2.sh para descarga [aquí](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Scripts)
+script2.sh para descarga [aquí](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Linux_Gen%C3%B3mica/Scripts/script2.sh)
