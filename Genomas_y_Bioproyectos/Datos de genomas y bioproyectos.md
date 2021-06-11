@@ -1,8 +1,9 @@
 # Práctica para la elaboración de un proyecto de genómica aplicada.
 
 ### **Autor:** _Jaqueline Flores Salinas_  
-   
-   
+
+La presente práctica contiene cuatro secciones. En la primer sección se muestra la información general de la especie elegida, en una segunda sección se muestra la información resumida de su genoma, en la tercer sección encontrarán información de un gen particular seleccionado por su importancia en la producción de esta especie, y en la última sección se muestra la información del BioProyecto seleccionado. En cada sección encontrarán enlaces para ir a la página de dónde se obtuvo la información.  
+
 ## **Información sobre Genomas y Bioproyectos**  
 ### **_Elección de una especie de importancia económica en producción animal._**  
 _Sus scrofa domesticus_  
