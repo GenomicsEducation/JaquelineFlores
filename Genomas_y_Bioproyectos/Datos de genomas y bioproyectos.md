@@ -69,5 +69,5 @@ Enlace de acceso: [Refseq](https://www.ncbi.nlm.nih.gov/nuccore/EU839903.1)
 | Volumen de datos | Gbases	92 |  
 | Volumen de datos | Mbytes	36711 |
 
-**Notas:** Documento con metadatos disponible en la sección superior de este directorio como carpeta _"Metadata"_  
+**Notas:** Un documento con los metadatos de este BioProyecto se encuentra disponible en este directorio como carpeta _"Metadata"_  
 Enlace de acceso: [Bioproyecto SRA](https://www.ncbi.nlm.nih.gov/sra/ERX4361651[accn])
