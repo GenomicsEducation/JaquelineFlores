@@ -1,10 +1,8 @@
 # Práctica para la elaboración de un proyecto de genómica aplicada.
 
-## **Autor**  
+### **Autor**  
 Jaqueline Flores Salinas  
- - Mexicana  
- - Licenciado en Biotecnología Genómica  
- - Profesional en procesamiento de patentes    
+   
    
 ## **Información sobre Genomas y Bioproyectos**  
 ### **_Elección de una especie de importancia económica en producción animal._**  
