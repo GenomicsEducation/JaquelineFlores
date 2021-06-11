@@ -1,5 +1,4 @@
-# Actividades del Curso:  
-# "_Genética y Genómica Aplicada a la Producción Animal_".
+# Curso _Genética y Genómica Aplicada a la Producción Animal_.  
 
 ## **Autor**  
 Jaqueline Flores Salinas  
@@ -8,7 +7,7 @@ Jaqueline Flores Salinas
  - Profesional en procesamiento de patentes    
    
 # Práctica para la elaboración de un proyecto de genómica aplicada.  
-Esta práctica incluye la elección de una especie de importancia económica en producción animal, la búsqueda de la información de su genoma secuenciado y además buscar BioProyectos con información genómica sobre estudios realizados en la especie seleccionada.  
+Esta práctica incluye la elección de una especie de importancia económica en producción animal, la búsqueda de la información de su genoma secuenciado en la base de datos _Assembly_ y _RefSeq_ del NCBI (National Center for Biotechnology Information), y la busqueda de BioProyectos con información genómica en la base de datos _SRA_ (Sequence Read Archive) del NCBI.  
 
 En la carpeta [Genomas_y_Bioproyectos](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Genomas_y_Bioproyectos) de este repositorio, podrán encontrar la especie que yo elegí, la información de su genoma y un BioProyecto de mi elección.  
  
