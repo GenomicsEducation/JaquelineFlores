@@ -1,5 +1,5 @@
 # Actividades del Curso:  
-"_Genética y Genómica Aplicada a la Producción Animal_".
+# "_Genética y Genómica Aplicada a la Producción Animal_".
 
 ## **Autor**  
 Jaqueline Flores Salinas  
