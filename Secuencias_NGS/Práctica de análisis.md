@@ -56,3 +56,4 @@ Biomuestra 2:SRR2006763_2.fastq
 
 
 ### **Análisis de control de calidad**  
+Para el análisis de control de calidad de secuencias fastq que provienen de secuenciadores NGS, en el directorio SRR2006763 crear y correr un script:  
