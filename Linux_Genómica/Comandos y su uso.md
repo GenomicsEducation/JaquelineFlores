@@ -37,10 +37,7 @@ Los script son pequeños archivos con un conjunto de instrucciones para realizar
    - EJEMPLO - Revisión de versión conda: `conda --version`  
 - Instalación de nano en conda: `conda install -c conda-forge nano`  
 - Creación de un script: `nano nombredelscript.sh` 
-   - EJEMPLO - Creación de script llamado script1: `nano script1.sh`
-- Guardar cambios en script: `ctrl + o`, seguido un `ENTER`  
-- Salir del script: `ctrl + x`  
-- Para detener ejecución: `ctrl + c`  
+   - EJEMPLO - Creación de script llamado script1: `nano script1.sh`  
 
 ### **_Práctica para creación de script_**  
 1. Ingresa el siguiente comando en tu editor de textos `nano nombredelscript.sh`. Esto creará un archivo llamado "script1" con extensión ".sh", esta extensión indica que se trata de un script. Al dar enter al comando se abrira este archivo y en esta sección podrás escribir lo que quieras que contenga el script.  
@@ -59,4 +56,7 @@ _Podrás encontrar el script1.sh [aquí](https://github.com/GenomicsEducation/Ja
 - Mueve el cursor al final de la línea actual: `ctrl-e`  
 - Borra desde el cursor hasta el final de la línea: `ctrl-k`  
 - Borra desde el cursor hasta el inicio de la línea: `ctrl-u`  
-- Borra la palabra inmediatamente detras del cursor: `ctrl-w`
+- Borra la palabra inmediatamente detras del cursor: `ctrl-w`  
+- Guardar cambios en script: `ctrl + o`, seguido un `ENTER`  
+- Salir del script: `ctrl + x`  
+- Para detener ejecución: `ctrl + c`  
