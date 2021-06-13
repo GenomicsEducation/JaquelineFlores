@@ -16,4 +16,4 @@
 - Descarga y muestra el contenido de las 5 primeras secuencias del archivo: `fastq-dump -X 5 -Z SRR6019464`  
 - Descarga el contenido de las 5 primeras secuencias y las almacena en un archivo con formato fastq: `fastq-dump -X 5 SRR6019464`  
 - Descarga la biomuestra completa: `fastq-dump --gzip --split-3 SRR6019464`  
-- Explorar la muesta y revisar el número de read descargados: `zcat SRR6019464.fastq.gz | echo $((``wc -l``/4))`  
+- Explorar la muesta y revisar el número de read descargados: `zcat SRR6019464_1.fastq.gz | tail -8` `zcat SRR6019464_2.fastq.gz | tail -8`  
