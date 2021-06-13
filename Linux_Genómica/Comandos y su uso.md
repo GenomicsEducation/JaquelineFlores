@@ -40,6 +40,7 @@ Los script son pequeños archivos con un conjunto de instrucciones para realizar
    - EJEMPLO - Creación de script llamado script1: `nano script1.sh`
 - Guardar cambios en script: `ctrl + o`, seguido un `ENTER`  
 - Salir del script: `ctrl + x`  
+- Para detener ejecución: `ctrl + c`  
 
 ### **_Práctica para creación de script_**  
 1. Ingresa el siguiente comando en tu editor de textos `nano nombredelscript.sh`. Esto creará un archivo llamado "script1" con extensión ".sh", esta extensión indica que se trata de un script. Al dar enter al comando se abrira este archivo y en esta sección podrás escribir lo que quieras que contenga el script.  
