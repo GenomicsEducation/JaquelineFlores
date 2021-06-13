@@ -22,3 +22,11 @@ Conectaremos al servidor de interés (en este caso conectaremos a POMEO) utiliza
   
   _NOTA: Recuerda que cuando ha terminado de ejecutarse algún comando aparecerá de nuevo la línea (base) dónde te encuentras trabajando, y aparecerá el cuadro de color que te indica que puedes escribir, esa es la señal de que se ha terminado de ejecutar un comando y que puedes continuar trabajando._  
 ![CONFIG](https://user-images.githubusercontent.com/80992964/121818019-5293db80-cc4a-11eb-90fe-518ce5f1b4b2.png)  
+
+### **Descarga de biomuestra desde SRA**  
+Para esta práctica se trabajará con la biomuestra SRR2006763 proveniente de la cepa _Aquagen_ de _Salmo salar_ y a partir de esta se obtendrán dos archivos fastq, ya que los datos provienen de secuenciación pair-end.  
+Biomuestra 1:SRR2006763_1.fastq  
+Biomuestra 2:SRR2006763_2.fastq  
+
+1. Para crear un archivo ejecutable (.sh) denominado download.sh, empleando nano: `nano download.sh`  
+   _NOTAS: El archivo ejecutable se empleará para descargar la biomuestra. Podrás encontrar el script [aquí](). En cada espacio que dice "USUARIO" cambiar por tu nombre de usuario. El script sólo tiene 4 líneas._  
