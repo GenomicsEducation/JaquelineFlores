@@ -38,5 +38,6 @@ Biomuestra 2:SRR2006763_2.fastq
    3.1. `cd SRR2006763`  
    3.2. `nano fdump.sh`  
    3.3. `bash fdump.sh`  
-   _NOTA: El archivo ejecutable permite obtener los archivos fastq de la muestra SRR2006763. Al finalizar, además de extraer los archivos fastq debería indicarte el total de read leidos y escritos. Podrás encontrar el script [aquí](). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 3 líneas._  
+
+  _NOTA: El archivo ejecutable permite obtener los archivos fastq de la muestra SRR2006763. Al finalizar, además de extraer los archivos fastq debería indicarte el total de read leidos y escritos. Podrás encontrar el script [aquí](). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 3 líneas._  
 ![BIOMUESTRA](https://user-images.githubusercontent.com/80992964/121818822-23339d80-cc4f-11eb-8abd-d53c8b6f5af7.png)
