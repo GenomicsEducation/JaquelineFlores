@@ -14,7 +14,7 @@ Jaqueline Flores Salinas
 ## Práctica para la elaboración de un proyecto de Genómica Aplicada.  
 Esta práctica incluye la elección de una especie de importancia económica en producción animal, la búsqueda de la información de su genoma secuenciado en la base de datos _Assembly_ y _RefSeq_ del NCBI (National Center for Biotechnology Information), y la busqueda de BioProyectos con información genómica en la base de datos _SRA_ (Sequence Read Archive) del NCBI.  
 
-En el archivo [Datos de genomas y bioproyectos.md](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Genomas_y_Bioproyectos/Datos%20de%20genomas%20y%20bioproyectos.md) de la carpeta [Genomas_y_Bioproyectos](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Genomas_y_Bioproyectos) de este repositorio, podrán encontrar la especie que yo elegí, la información de su genoma y un BioProyecto de mi elección.  
+En el archivo [Datos de genomas y bioproyectos.md](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Gen%C3%B3mica_Aplicada/Datos%20de%20genomas%20y%20bioproyectos.md) de la carpeta [Genómica_Aplicada](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Gen%C3%B3mica_Aplicada) de este repositorio, podrán encontrar la especie que yo elegí, la información de su genoma y un BioProyecto de mi elección.  
 
 
 ## **Práctica de Introducción de Linux para Genómica**  
@@ -30,4 +30,4 @@ Por último, en el archivo [SRA_Descarga de secuencias NGS.md](https://github.co
 
 
 ## Práctica de Introducción al Análisis de Secuencias NGS.  
-La carpeta [Secuencias_NGS](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias%20NGS) contiene el archivo [Práctica de análisis.md](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Pr%C3%A1ctica%20de%20an%C3%A1lisis.md) dónde encontrarás la información necesaria para realizar una práctica y aprender a descargar secuencias, comprobar su integridad, realizar un análisis de control de calidad, terminando con el filtrado y poda de dichas secuencias.
+La carpeta [Secuencias_NGS](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS) contiene el archivo [Práctica de análisis.md](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Pr%C3%A1ctica%20de%20an%C3%A1lisis.md) dónde encontrarás la información necesaria para realizar una práctica y aprender a descargar secuencias, comprobar su integridad, realizar un análisis de control de calidad, terminando con el filtrado y poda de dichas secuencias.
