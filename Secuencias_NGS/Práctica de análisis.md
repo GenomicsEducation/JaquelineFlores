@@ -5,6 +5,7 @@ Las tecnologías de secuenciación de próxima generación han evolucionado sign
 Conectaremos al servidor de interés (en este caso conectaremos a POMEO) utilizando la dirección IP y puerto correspondientes (en este caso usaremos IP 200.54.220.141, puerto 22) y el software PuTTy con las claves de acceso correspondientes.  
 ![CONEXIÓN](https://user-images.githubusercontent.com/80992964/121816229-10659c80-cc40-11eb-9f8f-be799a5cb4c4.png)  
 
+
 ### **Configurar bioconda e instalación de software**  
 1. Para configurar el canal bioconda se debe ejecutar el siguiente comando: `conda config --add channels bioconda`  
    _Al realizar la ejecución simplemente aparecera de nuevo la línea para escribir comandos._  
@@ -41,4 +42,14 @@ Biomuestra 2:SRR2006763_2.fastq
   _NOTA: El archivo ejecutable permite obtener los archivos fastq de la muestra SRR2006763. Al finalizar, además de extraer los archivos fastq debería indicarte el total de read leidos y escritos. Podrás encontrar el script [aquí](). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 3 líneas._  
 
 
-![BIOMUESTRA](https://user-images.githubusercontent.com/80992964/121818822-23339d80-cc4f-11eb-8abd-d53c8b6f5af7.png)
+![BIOMUESTRA](https://user-images.githubusercontent.com/80992964/121818822-23339d80-cc4f-11eb-8abd-d53c8b6f5af7.png)  
+
+
+### **Comprobación de integridad de archivos**  
+`md5sum` es un algoritmo empleado para evitar algún daño que pudo generarse por algún motivo durante el proceso de descarga.  
+1. Para buscar el código Md5 de las muestras y direccionar la información a un archivo md5_samples: `md5sum SRR2006763_1.fastq SRR2006763_2.fastq > md5_samples`  
+2. Para verificar la salida generada: `cat md5_samples`  
+3. Para comprobar la integridad de las biomuestras usando md5sum: `md5sum -c md5_samples`  
+
+
+![INTEGRIDAD](https://user-images.githubusercontent.com/80992964/121819522-20d34280-cc53-11eb-806c-9a6978027962.png)
