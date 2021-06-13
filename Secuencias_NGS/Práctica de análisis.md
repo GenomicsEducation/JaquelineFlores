@@ -31,3 +31,11 @@ Biomuestra 2:SRR2006763_2.fastq
 
 1. Para crear un archivo ejecutable (.sh) denominado download.sh, empleando nano: `nano download.sh`  
    _NOTAS: El archivo ejecutable se empleará para descargar la biomuestra. Podrás encontrar el script [aquí](). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 4 líneas._  
+2. Para correr el script: `bash download.sh`  
+3. Para comprobar que se creó el directorio de la secuencia descargada con el nombre SRR2006763, listar la carpeta _SRA_Samples_: `ls -l -h`  
+4. Para acceder a la carpeta SRR2006763 y crear un script:  
+   4.1. `cd SRR2006763`  
+   4.2. `nano fdump.sh`  
+
+
+![BIOMUESTRA](https://user-images.githubusercontent.com/80992964/121818822-23339d80-cc4f-11eb-8abd-d53c8b6f5af7.png)
