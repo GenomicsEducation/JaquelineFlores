@@ -57,3 +57,7 @@ Biomuestra 2:SRR2006763_2.fastq
 
 ### **Análisis de control de calidad**  
 Para el análisis de control de calidad de secuencias fastq que provienen de secuenciadores NGS, en el directorio SRR2006763 crear y correr un script:  
+1. Crear y ejecutar un archivo ejecutable (.sh) denominado fastqc.sh, empleando nano:  
+   1.1. `nano fastqc.sh`  
+   1.2. `bash fastqc.sh`  
+ _NOTAS: Podrás encontrar el script [aquí](). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 3 líneas._  
