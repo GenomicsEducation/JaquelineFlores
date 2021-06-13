@@ -52,4 +52,7 @@ Biomuestra 2:SRR2006763_2.fastq
 3. Para comprobar la integridad de las biomuestras usando md5sum: `md5sum -c md5_samples`  
 
 
-![INTEGRIDAD](https://user-images.githubusercontent.com/80992964/121819522-20d34280-cc53-11eb-806c-9a6978027962.png)
+![INTEGRIDAD](https://user-images.githubusercontent.com/80992964/121819522-20d34280-cc53-11eb-806c-9a6978027962.png)  
+
+
+### **Análisis de control de calidad**  
