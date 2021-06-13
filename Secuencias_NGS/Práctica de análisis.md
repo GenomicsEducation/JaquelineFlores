@@ -63,4 +63,7 @@ Para el análisis de control de calidad de secuencias fastq que provienen de sec
  _NOTAS: Podrás encontrar el script [aquí](). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 3 líneas. La salida resultante de la ejecución del script anterior serán dos archivos, uno HTML y uno .ZIP._  
 
 
-![CALIDAD](https://user-images.githubusercontent.com/80992964/121820520-d81e8800-cc58-11eb-9134-dcdfa20152fc.png)
+![CALIDAD](https://user-images.githubusercontent.com/80992964/121820520-d81e8800-cc58-11eb-9134-dcdfa20152fc.png)  
+
+
+Una vez realizado el análisis anterior deberemos transferir los archivos mediante protocolo FTP, sin embargo si el servidor al que estas accesando tiene instalado Rstudio server, como en esta activdad, es posible acceder los archivos directamente ingresando al servidor, en este caso sería a traves del puerto 8787, con el mismo acceso con el que ingresamos a POMEO.
