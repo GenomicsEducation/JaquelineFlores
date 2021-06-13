@@ -20,5 +20,5 @@ Conectaremos al servidor de interés (en este caso conectaremos a POMEO) utiliza
   4.1. Para acceder al directorio: `cd SRA_samples`  
   
   
-  _NOTA: Recuerda que cuando ha terminado de ejecutarse algún comando aparecerá de nuevo la línea (base) dónde te encuentras trabajando, y aparecerá el cuadro de color que te indica que puedes escribir, esa es la señal de que se ha terminado de ejecutar un comando y que puedes continuar trabajando._
+  _NOTA: Recuerda que cuando ha terminado de ejecutarse algún comando aparecerá de nuevo la línea (base) dónde te encuentras trabajando, y aparecerá el cuadro de color que te indica que puedes escribir, esa es la señal de que se ha terminado de ejecutar un comando y que puedes continuar trabajando._  
 ![CONFIG](https://user-images.githubusercontent.com/80992964/121818019-5293db80-cc4a-11eb-90fe-518ce5f1b4b2.png)  
