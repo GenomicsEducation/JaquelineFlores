@@ -56,7 +56,7 @@ Biomuestra 2:SRR2006763_2.fastq
 
 
 ## **Análisis de control de calidad**  
-Para el análisis de control de calidad de secuencias fastq que provienen de secuenciadores NGS, en el directorio SRR2006763 crear y correr un script:  
+Para el análisis de control de calidad de secuencias fastq que provienen de secuenciadores NGS, en el directorio SRR2006763 crear y correr un script.  
 1. Crear y ejecutar un archivo ejecutable (.sh) denominado fastqc.sh, empleando nano:  
    1.1. `nano fastqc.sh`  
    1.2. `bash fastqc.sh`  
@@ -71,3 +71,10 @@ Una vez realizado el análisis anterior deberemos transferir los archivos median
 ![RSERVER](https://user-images.githubusercontent.com/80992964/121820660-b245b300-cc59-11eb-8a33-3ec1d2437c04.png)  
 
 ## **Filtrado y poda**  
+Deberemos entrar a la carpeta donde constan los archivos fastq (SRR2006763) y ejecutar un script.
+1. Crear y ejecutar un archivo ejecutable (.sh) denominado trimm.sh, empleando nano:  
+   1.1. `nano trimm.sh`  
+   1.2. `bash trimm.sh`  
+ _NOTAS: Podrás encontrar el script [aquí](). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 3 líneas. De la ejecución anterior, resultarán 4 archivos comprimidos._  
+2. Descomprimir los archivos: `gunzip SRR20067634_filtered_1P.fastq.gz`  
+3. Realizar un análisis de calidad de las muestras y comparar con el reporte de calidad inicial: `fastqc  *.fastq.gz`   
