@@ -18,5 +18,7 @@ Conectaremos al servidor de interés (en este caso conectaremos a POMEO) utiliza
   _Se realizará la instalación de estos softwares, recordar que en un punto pedirá inficar "y" o "yes" para continuar con la instalación._
 4. Para crear un directorio llamado SRA_samples: `mkdir SRA_samples`  
   4.1. Para acceder al directorio: `cd SRA_samples`  
+  
+  
   _NOTA: Recuerda que cuando ha terminado de ejecutarse algún comando aparecerá de nuevo la línea (base) dónde te encuentras trabajando, esa es la señal de que se ha terminado de   ejecutar un comando y que puedes continuar trabajando._
 ![CONFIG](https://user-images.githubusercontent.com/80992964/121818019-5293db80-cc4a-11eb-90fe-518ce5f1b4b2.png)  
