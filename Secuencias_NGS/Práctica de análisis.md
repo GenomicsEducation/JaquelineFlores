@@ -90,4 +90,6 @@ De la misma forma como hicimos antes para acceder a los archivos mediante RStudi
 Los archivos HTML con la información de las secuencias los podrás revisar [aquí](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/fastqc_seq).  
 
 
-![RSTUDIO](https://user-images.githubusercontent.com/80992964/121821205-3c434b00-cc5d-11eb-8cf6-908d1d6032fa.png)
+![RSTUDIO](https://user-images.githubusercontent.com/80992964/121821205-3c434b00-cc5d-11eb-8cf6-908d1d6032fa.png)  
+
+Al hacer una comparación de la información de las secuencias filtradas respecto a las originales, se puede observar que estás han sido exitosamente podadas. La tabla que resume información al inicio de cada archivo nos indica que se eliminaron fragmentos inferiores a 60bp, reduciendo el rango de 43-98pb a 60-98pb. no obstante, siguen existiendo muchos fragmentos inferiores a 89bp en el set de datos y por tanto el programa entrega un signo de exclamación en ese resultado.
