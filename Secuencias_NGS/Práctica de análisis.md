@@ -79,5 +79,5 @@ Deberemos entrar a la carpeta donde constan los archivos fastq (SRR2006763) y ej
 2. Descomprimir los archivos: `gunzip SRR20067634_filtered_1P.fastq.gz`  
 3. Realizar un análisis de calidad de las muestras y comparar con el reporte de calidad inicial: `fastqc  *.fastq.gz`   
 
-De la misma forma como hicimos antes para acceder a los archivos mediante RStudio server, ingresaremos nuevamente para revisar los archivos obtenidos después del filtrado y poda de las secuencias.
+De la misma forma como hicimos antes para acceder a los archivos mediante RStudio server, ingresaremos nuevamente para revisar los archivos obtenidos después del filtrado y poda de las secuencias.  
 ![RSTUDIO](https://user-images.githubusercontent.com/80992964/121821205-3c434b00-cc5d-11eb-8cf6-908d1d6032fa.png)
