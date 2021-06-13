@@ -1,2 +1,6 @@
-# Introducción al análisis de secuencias NGS  
+## **Introducción al análisis de secuencias NGS**  
 Las tecnologías de secuenciación de próxima generación han evolucionado significativamente para proporcionar una mayor producción de datos (Taishan, Chitnis, Monos, & Dinh, 2021). Sin embargo, las plataformas son susceptibles a una amplia gama de fallas químicas e instrumentales (Stephan et al., 2014), por lo que, los datos obtenidos pueden tener un fuerte ruido de fondo, contaminación de los adaptadores, baja calidad de secuenciación, entre otros (He et al., 2020), lo que posteriormente representa problemas significativos en la precisión de la detección de variantes o regiones genómicas objetos de estudio. Por ello, el control de calidad, en el preprocesamiento de datos, se torna esencial, a fin de contar con datos limpios para evitar errores en análisis posteriores.
+
+### **Conectar a servidor Pomeo**  
+Conectaremos al servidor de interés (en este caso conectaremos a POMEO) utilizando la dirección IP correspondientes (en este caso usaremos 200.54.220.141 puerto 22) y el software PuTTy con las claves de acceso correspondientes.  
+![CONEXIÓN](https://user-images.githubusercontent.com/80992964/121815497-6afcf980-cc3c-11eb-9fe3-46facfb400eb.png)  
