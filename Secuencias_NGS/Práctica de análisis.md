@@ -29,13 +29,14 @@ Para esta práctica se trabajará con la biomuestra SRR2006763 proveniente de la
 Biomuestra 1:SRR2006763_1.fastq  
 Biomuestra 2:SRR2006763_2.fastq  
 
-1. Para crear un archivo ejecutable (.sh) denominado download.sh, empleando nano: `nano download.sh`  
-2. Para correr el script: `bash download.sh`  
+1. Para crear y ejecutar un archivo ejecutable (.sh) denominado download.sh, empleando nano:  
+   1.1. `nano download.sh`  
+   1.2. `bash download.sh`  
  _NOTAS: El archivo ejecutable permite descargar la biomuestra ya que incluye el comando `prefetch` que es parte del kit de herramientas de SRA y descarga archivos de secuencia en formato SRA comprimido. Además, incluye el comando `vdb-validate` que realiza chequeos luego de la descarga para asegurar que se ha realizado correctamente. Podrás encontrar el script [aquí](). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 4 líneas._  
-4. Para comprobar que se creó el directorio de la secuencia descargada con el nombre SRR2006763, listar la carpeta _SRA_Samples_: `ls -l -h`  
-5. Para acceder a la carpeta SRR2006763 y crear un script:  
-   4.1. `cd SRR2006763`  
-   4.2. `nano fdump.sh`  
-   4.3. `bash fdump.sh`  
+2. Para comprobar que se creó el directorio de la secuencia descargada con el nombre SRR2006763, listar la carpeta _SRA_Samples_: `ls -l -h`  
+3. Para acceder a la carpeta SRR2006763 y crear un script:  
+   3.1. `cd SRR2006763`  
+   3.2. `nano fdump.sh`  
+   3.3. `bash fdump.sh`  
    _NOTA: El archivo ejecutable permite obtener los archivos fastq de la muestra SRR2006763. Al finalizar, además de extraer los archivos fastq debería indicarte el total de read leidos y escritos. Podrás encontrar el script [aquí](). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 3 líneas._  
 ![BIOMUESTRA](https://user-images.githubusercontent.com/80992964/121818822-23339d80-cc4f-11eb-8abd-d53c8b6f5af7.png)
