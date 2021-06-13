@@ -1,6 +1,8 @@
 # **Introducción al análisis de secuencias NGS**  
 Las tecnologías de secuenciación de próxima generación han evolucionado significativamente para proporcionar una mayor producción de datos (Taishan, Chitnis, Monos, & Dinh, 2021). Sin embargo, las plataformas son susceptibles a una amplia gama de fallas químicas e instrumentales (Stephan et al., 2014), por lo que, los datos obtenidos pueden tener un fuerte ruido de fondo, contaminación de los adaptadores, baja calidad de secuenciación, entre otros (He et al., 2020), lo que posteriormente representa problemas significativos en la precisión de la detección de variantes o regiones genómicas objetos de estudio. Por ello, el control de calidad, en el preprocesamiento de datos, se torna esencial, a fin de contar con datos limpios para evitar errores en análisis posteriores.  
 
+_NOTA: Todos los scripts empleados en la presente práctica podrá encontrarlos en la carpeta [Scripts](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Scripts) ubicada dentro del directorio [Secuencias_NGS](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS).  
+
 ## **Conectar a servidor Pomeo**  
 Conectaremos al servidor de interés (en este caso conectaremos a POMEO) utilizando la dirección IP y puerto correspondientes (en este caso usaremos IP 200.54.220.141, puerto 22) y el software PuTTy con las claves de acceso correspondientes.  
 ![CONEXIÓN](https://user-images.githubusercontent.com/80992964/121816229-10659c80-cc40-11eb-9f8f-be799a5cb4c4.png)  
@@ -33,13 +35,13 @@ Biomuestra 2:SRR2006763_2.fastq
 1. Para crear y ejecutar un archivo ejecutable (.sh) denominado download.sh, empleando nano:  
    1.1. `nano download.sh`  
    1.2. `bash download.sh`  
- _NOTAS: El archivo ejecutable permite descargar la biomuestra ya que incluye el comando `prefetch` que es parte del kit de herramientas de SRA y descarga archivos de secuencia en formato SRA comprimido. Además, incluye el comando `vdb-validate` que realiza chequeos luego de la descarga para asegurar que se ha realizado correctamente. Podrás encontrar el script [aquí](). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 4 líneas._  
+ _NOTAS: El archivo ejecutable permite descargar la biomuestra ya que incluye el comando `prefetch` que es parte del kit de herramientas de SRA y descarga archivos de secuencia en formato SRA comprimido. Además, incluye el comando `vdb-validate` que realiza chequeos luego de la descarga para asegurar que se ha realizado correctamente. Podrás encontrar el script [aquí](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Scripts/download.sh). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 4 líneas._  
 2. Para comprobar que se creó el directorio de la secuencia descargada con el nombre SRR2006763, listar la carpeta _SRA_Samples_: `ls -l -h`  
 3. Para acceder a la carpeta SRR2006763 y crear un script:  
    3.1. `cd SRR2006763`  
    3.2. `nano fdump.sh`  
    3.3. `bash fdump.sh`  
-  _NOTA: El archivo ejecutable permite obtener los archivos fastq de la muestra SRR2006763. Al finalizar, además de extraer los archivos fastq debería indicarte el total de read leidos y escritos. Podrás encontrar el script [aquí](). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 3 líneas._  
+  _NOTA: El archivo ejecutable permite obtener los archivos fastq de la muestra SRR2006763. Al finalizar, además de extraer los archivos fastq debería indicarte el total de read leidos y escritos. Podrás encontrar el script [aquí](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Scripts/fdump.sh). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 3 líneas._  
 
 
 ![BIOMUESTRA](https://user-images.githubusercontent.com/80992964/121818822-23339d80-cc4f-11eb-8abd-d53c8b6f5af7.png)  
@@ -60,7 +62,7 @@ Para el análisis de control de calidad de secuencias fastq que provienen de sec
 1. Crear y ejecutar un archivo ejecutable (.sh) denominado fastqc.sh, empleando nano:  
    1.1. `nano fastqc.sh`  
    1.2. `bash fastqc.sh`  
- _NOTAS: Podrás encontrar el script [aquí](). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 3 líneas. La salida resultante de la ejecución del script anterior serán dos archivos, uno HTML y uno .ZIP._  
+ _NOTAS: Podrás encontrar el script [aquí](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Scripts/fastqc.sh). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 3 líneas. La salida resultante de la ejecución del script anterior serán dos archivos, uno HTML y uno .ZIP._  
 
 
 ![CALIDAD](https://user-images.githubusercontent.com/80992964/121820520-d81e8800-cc58-11eb-9134-dcdfa20152fc.png)  
@@ -79,7 +81,7 @@ Deberemos entrar a la carpeta donde constan los archivos fastq (SRR2006763) y ej
 1. Crear y ejecutar un archivo ejecutable (.sh) denominado trimm.sh, empleando nano:  
    1.1. `nano trimm.sh`  
    1.2. `bash trimm.sh`  
- _NOTAS: Podrás encontrar el script [aquí](). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 3 líneas. De la ejecución anterior, resultarán 4 archivos comprimidos._  
+ _NOTAS: Podrás encontrar el script [aquí](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Scripts/trimm.sh). Cada palabra "USUARIO" cambiala por tu propio nombre de usuario. El script sólo tiene 3 líneas. De la ejecución anterior, resultarán 4 archivos comprimidos._  
 2. Descomprimir los archivos: `gunzip SRR20067634_filtered_1P.fastq.gz`  
 3. Realizar un análisis de calidad de las muestras y comparar con el reporte de calidad inicial: `fastqc  *.fastq.gz`   
 
