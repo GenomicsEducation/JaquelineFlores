@@ -1,12 +1,12 @@
-## **Introducción al análisis de secuencias NGS**  
+# **Introducción al análisis de secuencias NGS**  
 Las tecnologías de secuenciación de próxima generación han evolucionado significativamente para proporcionar una mayor producción de datos (Taishan, Chitnis, Monos, & Dinh, 2021). Sin embargo, las plataformas son susceptibles a una amplia gama de fallas químicas e instrumentales (Stephan et al., 2014), por lo que, los datos obtenidos pueden tener un fuerte ruido de fondo, contaminación de los adaptadores, baja calidad de secuenciación, entre otros (He et al., 2020), lo que posteriormente representa problemas significativos en la precisión de la detección de variantes o regiones genómicas objetos de estudio. Por ello, el control de calidad, en el preprocesamiento de datos, se torna esencial, a fin de contar con datos limpios para evitar errores en análisis posteriores.  
 
-### **Conectar a servidor Pomeo**  
+## **Conectar a servidor Pomeo**  
 Conectaremos al servidor de interés (en este caso conectaremos a POMEO) utilizando la dirección IP y puerto correspondientes (en este caso usaremos IP 200.54.220.141, puerto 22) y el software PuTTy con las claves de acceso correspondientes.  
 ![CONEXIÓN](https://user-images.githubusercontent.com/80992964/121816229-10659c80-cc40-11eb-9f8f-be799a5cb4c4.png)  
 
 
-### **Configurar bioconda e instalación de software**  
+## **Configurar bioconda e instalación de software**  
 1. Para configurar el canal bioconda se debe ejecutar el siguiente comando: `conda config --add channels bioconda`  
    _Al realizar la ejecución simplemente aparecera de nuevo la línea para escribir comandos._  
 2. Para buscar software en bioconda antes de instalar ejecute los siguientes comandos por separado:  
@@ -25,7 +25,7 @@ _NOTA: Recuerda que cuando ha terminado de ejecutarse algún comando aparecerá 
 ![CONFIG](https://user-images.githubusercontent.com/80992964/121818511-5117e280-cc4d-11eb-896f-17fdedb3541b.png)  
 
 
-### **Descarga de biomuestra desde SRA**  
+## **Descarga de biomuestra desde SRA**  
 Para esta práctica se trabajará con la biomuestra SRR2006763 proveniente de la cepa _Aquagen_ de _Salmo salar_ y a partir de esta se obtendrán dos archivos fastq, ya que los datos provienen de secuenciación pair-end.  
 Biomuestra 1:SRR2006763_1.fastq  
 Biomuestra 2:SRR2006763_2.fastq  
@@ -45,7 +45,7 @@ Biomuestra 2:SRR2006763_2.fastq
 ![BIOMUESTRA](https://user-images.githubusercontent.com/80992964/121818822-23339d80-cc4f-11eb-8abd-d53c8b6f5af7.png)  
 
 
-### **Comprobación de integridad de archivos**  
+## **Comprobación de integridad de archivos**  
 `md5sum` es un algoritmo empleado para evitar algún daño que pudo generarse por algún motivo durante el proceso de descarga.  
 1. Para buscar el código Md5 de las muestras y direccionar la información a un archivo md5_samples: `md5sum SRR2006763_1.fastq SRR2006763_2.fastq > md5_samples`  
 2. Para verificar la salida generada: `cat md5_samples`  
@@ -55,7 +55,7 @@ Biomuestra 2:SRR2006763_2.fastq
 ![INTEGRIDAD](https://user-images.githubusercontent.com/80992964/121819522-20d34280-cc53-11eb-806c-9a6978027962.png)  
 
 
-### **Análisis de control de calidad**  
+## **Análisis de control de calidad**  
 Para el análisis de control de calidad de secuencias fastq que provienen de secuenciadores NGS, en el directorio SRR2006763 crear y correr un script:  
 1. Crear y ejecutar un archivo ejecutable (.sh) denominado fastqc.sh, empleando nano:  
    1.1. `nano fastqc.sh`  
@@ -68,5 +68,6 @@ Para el análisis de control de calidad de secuencias fastq que provienen de sec
 
 Una vez realizado el análisis anterior deberemos transferir los archivos mediante protocolo FTP, sin embargo si el servidor al que estas accesando tiene instalado Rstudio server, como en esta activdad, es posible acceder a todos los archivos, reportes y carpetas creados, directamente ingresando al servidor, en este caso sería a traves del puerto 8787, con el mismo acceso con el que ingresamos a POMEO. La imagen inferior muestra como en esta actividad accedimos a los archivos obtenidos.  
 
-![RSERVER](https://user-images.githubusercontent.com/80992964/121820660-b245b300-cc59-11eb-8a33-3ec1d2437c04.png)
+![RSERVER](https://user-images.githubusercontent.com/80992964/121820660-b245b300-cc59-11eb-8a33-3ec1d2437c04.png)  
 
+## **Filtrado y poda**  
