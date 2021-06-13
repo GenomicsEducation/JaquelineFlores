@@ -70,7 +70,7 @@ Para el análisis de control de calidad de secuencias fastq que provienen de sec
 
 Una vez realizado el análisis anterior deberemos transferir los archivos mediante protocolo FTP, sin embargo si el servidor al que estas accesando tiene instalado RStudio server, como en esta activdad, es posible acceder a todos los archivos, reportes y carpetas creados, directamente ingresando al servidor, en este caso sería a traves del puerto 8787, con el mismo acceso con el que ingresamos a POMEO. La imagen inferior muestra como en esta actividad accedimos a los archivos obtenidos.  
 
-El archivo HTML con la información de las secuencias lo podrás revisar [aquí]().  
+El archivo HTML con la información de las secuencias lo podrás revisar [aquí](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/fastqc_seq).  
 
 
 ![RSERVER](https://user-images.githubusercontent.com/80992964/121820660-b245b300-cc59-11eb-8a33-3ec1d2437c04.png)  
@@ -87,7 +87,7 @@ Deberemos entrar a la carpeta donde constan los archivos fastq (SRR2006763) y ej
 
 De la misma forma como hicimos antes para acceder a los archivos mediante RStudio server, ingresaremos nuevamente para revisar los archivos obtenidos después del filtrado y poda de las secuencias.  
 
-Los archivos HTML con la información de las secuencias los podrás revisar [aquí]().  
+Los archivos HTML con la información de las secuencias los podrás revisar [aquí](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/fastqc_seq).  
 
 
 ![RSTUDIO](https://user-images.githubusercontent.com/80992964/121821205-3c434b00-cc5d-11eb-8cf6-908d1d6032fa.png)
