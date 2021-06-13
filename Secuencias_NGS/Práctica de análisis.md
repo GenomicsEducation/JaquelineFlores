@@ -66,4 +66,4 @@ Para el análisis de control de calidad de secuencias fastq que provienen de sec
 ![CALIDAD](https://user-images.githubusercontent.com/80992964/121820520-d81e8800-cc58-11eb-9134-dcdfa20152fc.png)  
 
 
-Una vez realizado el análisis anterior deberemos transferir los archivos mediante protocolo FTP, sin embargo si el servidor al que estas accesando tiene instalado Rstudio server, como en esta activdad, es posible acceder los archivos directamente ingresando al servidor, en este caso sería a traves del puerto 8787, con el mismo acceso con el que ingresamos a POMEO.
+Una vez realizado el análisis anterior deberemos transferir los archivos mediante protocolo FTP, sin embargo si el servidor al que estas accesando tiene instalado Rstudio server, como en esta activdad, es posible acceder a los archivos directamente ingresando al servidor, en este caso sería a traves del puerto 8787, con el mismo acceso con el que ingresamos a POMEO. La imagne inferior muestra como acceder en esta actividad accedimos a los archivos obtenidos.
