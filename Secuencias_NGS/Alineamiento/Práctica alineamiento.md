@@ -8,4 +8,4 @@ El resultado del mapeo o alineamiento se guarda en un archivo d etexto plano con
 # **Interpretación del formato SAM**  
 El formato SAM consta de un encabezado que comienza con el símbolo @ y una sección de alineamiento que contiene la información de cada uno de los reads que alineo al genoma de referencia. Para conocer más acerca del formato SAM puedes revisar el [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2723002/) que describe el formato o simplmente revisar la información que [wikipedia](https://en.wikipedia.org/wiki/SAM_(file_format) explica sobre el mismo. Los archivos SAM se pueden analizar y editar con el software SAMtools. A continuación se muestra un ejemplo del formato SAM con los 11 campos obligatorios del alineamiento y 1 campo opcional.  
 
-[SAM](![image](https://user-images.githubusercontent.com/80992964/122462240-f991b380-cf79-11eb-9e46-cdabe96759bb.png)
+![SAM](https://user-images.githubusercontent.com/80992964/122462329-13cb9180-cf7a-11eb-8e00-c3a687e97f22.png)
