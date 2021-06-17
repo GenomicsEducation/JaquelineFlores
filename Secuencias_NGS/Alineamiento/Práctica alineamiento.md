@@ -91,12 +91,10 @@ Para ejecutar todas las etapas anteriores en ese orden se debe crear un script: 
 _Nota: Encontrarás el script [aquí](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Alineamiento/Scripts_alineamiento/aln_mt.sh)._  
 
 Al ejecutar el script tendras tus archivos SAM/BAM, y puedes observar tu archivo sam con el comando `less` de linux (recuerda que es un archivo de texto plano): `less SRR2006763.sam`  
-
-También puedes realizar un análisis estadístico estandar con los siguientes comandos: `samtools flagstat SRR2006763.bam > muestra_stat.txt`  
-
 ![ALIN](https://user-images.githubusercontent.com/80992964/122484521-5f8e3300-cf9a-11eb-83ff-5f1625e307e2.png)  
 
+También puedes realizar un análisis estadístico estandar con los siguientes comandos: `samtools flagstat SRR2006763.bam > muestra_stat.txt`  
+![STAT](https://user-images.githubusercontent.com/80992964/122485732-3d49e480-cf9d-11eb-9398-e95092f2aeeb.png)  
 
-Como puedes observar cada secuencia contiene varias columnas. La primera columna hace referencia al nombre de la secuencia, y de ahí en delante la segunda 
 
-Puedes ejecutar el siguiente comando para identificar que significa cada número de la columna 2, por ejemplo, sólo sustituye "(número)" por el número de interés: `samtools flags (número)`  
+Como puedes observar cada secuencia contiene varias columnas. La primera columna hace referencia al nombre de la secuencia, y de ahí en delante cada número, signo o símbolo tiene un significado particular. Por ejemplo, puedes ejecutar el siguiente comando para identificar que significa cada número de la columna 2, sólo sustituye "(número)" por el número de interés: `samtools flags (número)`  
