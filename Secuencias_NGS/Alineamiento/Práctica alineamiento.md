@@ -17,7 +17,7 @@ El formato SAM consta de un encabezado que comienza con el símbolo @ y una secc
 
 # **Notas importantes**  
 ## **Origen de las muestras**  
-Para facilitar el proceso se utilizará una muestra que provieme de la base de datos SRA del NCBI, que corresponde a lecturas crudas del salmón del Atlántico _Salmo salar_ en formato fastq, obtenidas por secuenciación de extremos emparejados con un secuenciador Illumina HiSeq2000. La muestra se alineará al genoma de la mitocondria ya que por su pequeño tamaño, el alineamiento no debería tardar más de unos pocos minutos.
+Para facilitar el proceso se utilizará una muestra que proviene de la base de datos SRA del NCBI, que corresponde a lecturas crudas del salmón del Atlántico _Salmo salar_ en formato fastq, obtenidas por secuenciación de extremos emparejados con un secuenciador Illumina HiSeq2000. La muestra se alineará al genoma de la mitocondria ya que por su pequeño tamaño, el alineamiento no debería tardar más de unos pocos minutos.
 
 ## **Etapas del alineamiento**  
  1. Descargar Genoma de referencia de la mitocondria e indexar.  
@@ -62,18 +62,34 @@ _NOTA: En los comandos del punto 3, cambia la palabra "usuario" por tu nombre de
 
 
 ## **Descarga de secuencias**  
-Ahora descargaremos el genoma de referencia de la mitocondria de _Salmo salar_ en la misma carpeta de alineamiento, para ello entra al siguiente [link](https://www.ncbi.nlm.nih.gov/genome/?term=salmo+salar) y sigue los pasos que se muestran en la siguiente imagen:  
+Ahora descargaremos el genoma de referencia de la mitocondria de _Salmo salar_ en la misma carpeta de alineamiento. Para ello entra al siguiente [link](https://www.ncbi.nlm.nih.gov/genome/?term=salmo+salar) y sigue los pasos que se muestran en la siguiente imagen:  
 ![SALMO](https://user-images.githubusercontent.com/80992964/122481025-93b22580-cf93-11eb-93d6-bbfde7568342.png)  
 
 ## **Carga de secuencias a POMEO**  
-Para esto utilizaremos WinSCP, debes iniciar sesión, guardar tus datos y conectarte como se indica en la siguiente imagen. Al conectar debes ingresar nuevamente tu contraseña y aparecerá la interfaz de tu servidor con las carpetas que tienes creadas, aquí ingresarás en tu carpeta de alineamiento y arrastrarás el archivo descagado del genoma mitocondrial a la misma. Cuando termines lo anterior puedes ingresar a POMEO, listar tu carpeta de alineamiento con `ls` y verás tu archivo junto con tus secuencias fastq.   
+Para esta parte utilizaremos WinSCP, debes iniciar sesión, guardar tus datos y conectarte como se indica en la siguiente imagen. Al conectar debes ingresar nuevamente tu contraseña y aparecerá la interfaz de tu servidor con las carpetas que tienes creadas, aquí ingresarás en tu carpeta de alineamiento y arrastrarás el archivo descagado del genoma mitocondrial a la misma. Cuando termines lo anterior puedes ingresar a POMEO, listar tu carpeta de alineamiento con `ls` y deberías ver tu archivo junto con tus secuencias fastq.   
 ![WINSCP](https://user-images.githubusercontent.com/80992964/122483002-40da6d00-cf97-11eb-81f3-abfffec4ec6c.png)  
 
 
 ## **Indexación del genoma de referencia**  
-Una vez que incluiste en tu carpeta de alineamiento todos los archivos descritos en pasos anteriores podemos proceder a la etapa inicial del alineamiento, que corresponde a la indexación del genoma de referencia con bwa usando el siguiente comando: `bwa index mt.fasta`  
+Una vez que incluiste en tu carpeta de alineamiento todos los archivos descritos en los pasos anteriores podemos proceder a la etapa inicial del alineamiento, que corresponde a la indexación del genoma de referencia con bwa usando el siguiente comando: `bwa index mt.fasta`  
 _Nota: el comando dice mt.fasta porque así se llama el archivo, recuerda cambiar al nombre de tu propio archivo._  
 
 La salida del comando dará como resultado 5 archivos con extensiones “amb”,“ann”,“bwt”,“pac” y “sa”.  
 ![INDEX](https://user-images.githubusercontent.com/80992964/122483372-09b88b80-cf98-11eb-8056-cff521407369.png)  
 
+
+## **Alineamiento**  
+Para el alineamiento tendremos las siguientes etapas:  
+ - Alineamiento de las secuencias contra el genoma de referencia, cuya salida será un archivo con extensión “.sam”  
+ - Conversión del archivo SAM a BAM  
+ - Inspeccionar el archivo .sam de salida  
+ - Ordenar lecturas alineadas por posición  
+ - Indexación con Samtools  
+ - Exploración de datos con Samtools  
+
+Para ejecutar todas las etapas anteriores en ese orden se debe crear un script: `nano aln_mt.sh`  
+_Nota: Encontrarás el script [aquí]()._  
+
+Al ejecutar el script tendras tus archivos SAM/BAM, y puedes observar tu archivo sam con el comando `less` de linux (recuerda que es un archivo de texto plano): `less SRR2006763.sam`  
+
+También puedes realizar un análisis estadístico estandar con los siguientes comandos: `samtools flagstat SRR2006763.bam > muestra_stat.txt`
