@@ -93,8 +93,12 @@ _Nota: Encontrarás el script [aquí](https://github.com/GenomicsEducation/Jaque
 Al ejecutar el script tendras tus archivos SAM/BAM, y puedes observar tu archivo sam con el comando `less` de linux (recuerda que es un archivo de texto plano): `less SRR2006763.sam`  
 ![ALIN](https://user-images.githubusercontent.com/80992964/122484521-5f8e3300-cf9a-11eb-83ff-5f1625e307e2.png)  
 
+Como puedes observar cada secuencia contiene varias columnas. La primera columna hace referencia al nombre de la secuencia, y de ahí en delante cada número, signo o símbolo tiene un significado particular. Por ejemplo, puedes ejecutar el siguiente comando para identificar que significa cada número de la columna 2, sólo sustituye "(número)" por el número de interés: `samtools flags (número)`  
+![FLAGS](https://user-images.githubusercontent.com/80992964/122486148-163fe280-cf9e-11eb-8e9f-27a327e71434.png)
+
+
 También puedes realizar un análisis estadístico estandar con los siguientes comandos: `samtools flagstat SRR2006763.bam > muestra_stat.txt`  
 ![STAT](https://user-images.githubusercontent.com/80992964/122485732-3d49e480-cf9d-11eb-9398-e95092f2aeeb.png)  
+De la información obtenida podemos determinar que hay un total de 4,395 lecturas que pasaron el control de calidad, y ninguna que no pasó dicho control.  
+Asimismo, podemos decir que hay 2,196 lecturas del Read1 y 2,197 lecturas del Read2. Del total de lecturas (4,395) sólo 4,206 (95.74% del total de lecturas) se lograron aparear apropiadamente, es decir, tanto la secuencia forward como reverse se aparearon correctamente.
 
-
-Como puedes observar cada secuencia contiene varias columnas. La primera columna hace referencia al nombre de la secuencia, y de ahí en delante cada número, signo o símbolo tiene un significado particular. Por ejemplo, puedes ejecutar el siguiente comando para identificar que significa cada número de la columna 2, sólo sustituye "(número)" por el número de interés: `samtools flags (número)`  
