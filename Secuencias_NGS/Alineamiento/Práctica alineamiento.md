@@ -46,3 +46,16 @@ Conectaremos al servidor de interés utilizando la dirección IP y puerto corres
   
 _NOTA: Recuerda que cuando ha terminado de ejecutarse algún comando aparecerá de nuevo la línea (base) dónde te encuentras trabajando, y aparecerá el cuadro de color que te indica que puedes escribir, esa es la señal de que se ha terminado de ejecutar un comando y que puedes continuar trabajando._  
 ![CONFIG](https://user-images.githubusercontent.com/80992964/122472300-061c0900-cf86-11eb-82f7-2e4a6d784002.png)  
+
+
+## **Creación de directorio y descarga de secuencias**  
+Considerando que nuestras secuencias fastq originales, las trabajadas en la práctica de análisis, tuvieron muy buena calidad, podemos trabajar directamente con ellas. Para ambos casos debemos trasladar los archivos a una nueva carpeta, de la siguiente forma:  
+1. Crear una carpeta denominada "alineamiento" en tu usuario de home2: `mkdir alineamiento`  
+2. Ingresar a la carpeta: `cd alineamiento`  
+3. Transferir los archivos de la clase anterior a la nueva carpeta, ejecutando los comandos 1 a 1:
+  3.1. `mv /home2/usuario/SRA_samples/SRR2006763/SRR2006763_1.fastq /home2/usuario/alineamiento/`  
+  3.2. `mv /home2/usuario/SRA_samples/SRR2006763/SRR2006763_2.fastq /home2/usuario/alineamiento/`  
+4. Lista tu carpeta de alineamiento para verificar que tienes lo necesario para el alineamiento: `ls`  
+
+_NOTA: En los comandos del punto 3, cambia la palabra "usuario" por tu nombre de usuario. En la lista del punto 4 deberías obtener como resultado los dos archivos que acabas de mover._  
+![DIR](https://user-images.githubusercontent.com/80992964/122474092-58f6c000-cf88-11eb-9aa2-17f4efdd31f1.png)
