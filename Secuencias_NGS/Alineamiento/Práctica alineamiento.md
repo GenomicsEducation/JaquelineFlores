@@ -72,6 +72,8 @@ Para esto utilizaremos WinSCP, debes iniciar sesión, guardar tus datos y conect
 
 ## **Indexación del genoma de referencia**  
 Una vez que incluiste en tu carpeta de alineamiento todos los archivos descritos en pasos anteriores podemos proceder a la etapa inicial del alineamiento, que corresponde a la indexación del genoma de referencia con bwa usando el siguiente comando: `bwa index mt.fasta`  
+_Nota: el comando dice mt.fasta porque así se llama el archivo, recuerda cambiar al nombre de tu propio archivo._  
+
 La salida del comando dará como resultado 5 archivos con extensiones “amb”,“ann”,“bwt”,“pac” y “sa”.  
 ![INDEX](https://user-images.githubusercontent.com/80992964/122483372-09b88b80-cf98-11eb-8056-cff521407369.png)  
 
