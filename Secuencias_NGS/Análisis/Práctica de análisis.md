@@ -3,7 +3,7 @@ Las tecnologías de secuenciación de próxima generación han evolucionado sign
 
 _NOTA: Todos los scripts empleados en la presente práctica podrá encontrarlos en la carpeta [Scripts_análisis](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/An%C3%A1lisis/Scripts_an%C3%A1lisis) ubicada dentro del directorio [Análisis](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/An%C3%A1lisis)._  
 
-## **Conectar a servidor Pomeo**  
+## **Conectar a servidor**  
 Conectaremos al servidor de interés (en este caso conectaremos a POMEO) utilizando la dirección IP y puerto correspondientes (en este caso usaremos IP 200.54.220.141, puerto 22) y el software PuTTy con las claves de acceso correspondientes.  
 ![CONEXIÓN](https://user-images.githubusercontent.com/80992964/121816229-10659c80-cc40-11eb-9f8f-be799a5cb4c4.png)  
 
