@@ -34,15 +34,15 @@ Conectaremos al servidor de interés utilizando la dirección IP y puerto corres
    _Al realizar la ejecución simplemente aparecera de nuevo la línea para escribir comandos, en mi caso aparece un mensaje que indica que ya tengo bioconda en mi lista de canales._  
 2. Para la instalación del software bwa: `conda install -c bioconda bwa`  
   _Se realizará la instalación del software, recordar que en un punto pedirá inficar "y" o "yes" para continuar con la instalación._
-3. Para la instalación del software samtools ejecute cada comando independiente:
+3. Para la instalación del software samtools ejecute cada comando independiente:  
   3.1. `conda install -c bioconda samtools`  
   3.2. `conda config --add channels bioconda`  
   3.3. `conda config --add channels conda-forge`   
   3.4. `conda install samtools==1.11`  
-4. Verificar directorios de instalación ejecutando los siguientes comandos de forma independiente:
+4. Verificar directorios de instalación ejecutando los siguientes comandos de forma independiente:  
   4.1. `whereis sratoolkit`  
   4.2. `whereis samtools`  
-  4.3. `whereis bwa`
+  4.3. `whereis bwa`  
   
 _NOTA: Recuerda que cuando ha terminado de ejecutarse algún comando aparecerá de nuevo la línea (base) dónde te encuentras trabajando, y aparecerá el cuadro de color que te indica que puedes escribir, esa es la señal de que se ha terminado de ejecutar un comando y que puedes continuar trabajando._  
 ![CONFIG](https://user-images.githubusercontent.com/80992964/122472300-061c0900-cf86-11eb-82f7-2e4a6d784002.png)  
