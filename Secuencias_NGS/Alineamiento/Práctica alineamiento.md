@@ -95,3 +95,8 @@ Al ejecutar el script tendras tus archivos SAM/BAM, y puedes observar tu archivo
 También puedes realizar un análisis estadístico estandar con los siguientes comandos: `samtools flagstat SRR2006763.bam > muestra_stat.txt`  
 
 ![ALIN](https://user-images.githubusercontent.com/80992964/122484521-5f8e3300-cf9a-11eb-83ff-5f1625e307e2.png)  
+
+
+Como puedes observar cada secuencia contiene varias columnas. La primera columna hace referencia al nombre de la secuencia, y de ahí en delante la segunda 
+
+Puedes ejecutar el siguiente comando para identificar que significa cada número de la columna 2, por ejemplo, sólo sustituye "(número)" por el número de interés: `samtools flags (número)`  
