@@ -24,7 +24,7 @@ Para facilitar el proceso se utilizará una muestra que provieme de la base de d
  2. Alinear muestra con genoma de referencia.  
  3. Analizar el resultado del alineamiento.  
 
-# **Actividades de la práctica**  
+# **Práctica de Alineamiento**  
 ## **Conexión a servidor**  
 Conectaremos al servidor de interés utilizando la dirección IP y puerto correspondientes (en este caso conectaremos a POMEO con los datos: IP 200.54.220.141, puerto 22), mediante el software PuTTy y nuestra clave de acceso.
 ![POMEO](https://user-images.githubusercontent.com/80992964/122467043-a589cd80-cf7f-11eb-92fa-e48cf06fefb1.png)  
