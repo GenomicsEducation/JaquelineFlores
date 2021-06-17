@@ -24,7 +24,25 @@ Para facilitar el proceso se utilizará una muestra que provieme de la base de d
  2. Alinear muestra con genoma de referencia.  
  3. Analizar el resultado del alineamiento.  
 
-
-# **Conexión a servidor**  
+# **Actividades de la práctica**  
+## **Conexión a servidor**  
 Conectaremos al servidor de interés utilizando la dirección IP y puerto correspondientes (en este caso conectaremos a POMEO con los datos: IP 200.54.220.141, puerto 22), mediante el software PuTTy y nuestra clave de acceso.
-![POMEO](https://user-images.githubusercontent.com/80992964/122467043-a589cd80-cf7f-11eb-92fa-e48cf06fefb1.png)
+![POMEO](https://user-images.githubusercontent.com/80992964/122467043-a589cd80-cf7f-11eb-92fa-e48cf06fefb1.png)  
+
+## **Configurar bioconda e instalar programas para análisis**  
+1. Para configurar el canal bioconda se debe ejecutar el siguiente comando: `conda config --add channels bioconda`  
+   _Al realizar la ejecución simplemente aparecera de nuevo la línea para escribir comandos, en mi caso aparece un mensaje que indica que ya tengo bioconda en mi lista de canales._  
+2. Para la instalación del software bwa: `conda install -c bioconda bwa`  
+  _Se realizará la instalación del software, recordar que en un punto pedirá inficar "y" o "yes" para continuar con la instalación._
+3. Para la instalación del software samtools ejecute cada comando independiente:
+  3.1. `conda install -c bioconda samtools`  
+  3.2. `conda config --add channels bioconda`  
+  3.3. `conda config --add channels conda-forge`   
+  3.4. `conda install samtools==1.11`  
+4. Verificar directorios de instalación ejecutando los siguientes comandos de forma independiente:
+  4.1. `whereis sratoolkit`  
+  4.2. `whereis samtools`  
+  4.3. `whereis bwa`
+  
+_NOTA: Recuerda que cuando ha terminado de ejecutarse algún comando aparecerá de nuevo la línea (base) dónde te encuentras trabajando, y aparecerá el cuadro de color que te indica que puedes escribir, esa es la señal de que se ha terminado de ejecutar un comando y que puedes continuar trabajando._  
+![CONFIG](https://user-images.githubusercontent.com/80992964/122472300-061c0900-cf86-11eb-82f7-2e4a6d784002.png)  
