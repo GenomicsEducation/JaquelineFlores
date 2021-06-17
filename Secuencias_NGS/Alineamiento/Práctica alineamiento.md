@@ -48,7 +48,7 @@ _NOTA: Recuerda que cuando ha terminado de ejecutarse algún comando aparecerá 
 ![CONFIG](https://user-images.githubusercontent.com/80992964/122472300-061c0900-cf86-11eb-82f7-2e4a6d784002.png)  
 
 
-## **Creación de directorio y descarga de secuencias**  
+## **Creación de directorio**  
 Considerando que nuestras secuencias fastq originales, las trabajadas en la práctica de análisis, tuvieron muy buena calidad, podemos trabajar directamente con ellas. Para ambos casos debemos trasladar los archivos a una nueva carpeta, de la siguiente forma:  
 1. Crear una carpeta denominada "alineamiento" en tu usuario de home2: `mkdir alineamiento`  
 2. Ingresar a la carpeta: `cd alineamiento`  
@@ -59,3 +59,8 @@ Considerando que nuestras secuencias fastq originales, las trabajadas en la prá
 
 _NOTA: En los comandos del punto 3, cambia la palabra "usuario" por tu nombre de usuario. En la lista del punto 4 deberías obtener como resultado los dos archivos que acabas de mover._  
 ![DIR](https://user-images.githubusercontent.com/80992964/122474092-58f6c000-cf88-11eb-9aa2-17f4efdd31f1.png)
+
+
+## **Descarga de secuencias**  
+Ahora descargaremos el genoma de referencia de la mitocondria de _Salmo salar_ en la misma carpeta de alineamiento, para ello entra al siguiente [link](https://www.ncbi.nlm.nih.gov/genome/?term=salmo+salar) y sigue los pasos que se muestran en la siguiente imagen:  
+![SALMO](https://user-images.githubusercontent.com/80992964/122481025-93b22580-cf93-11eb-93d6-bbfde7568342.png)
