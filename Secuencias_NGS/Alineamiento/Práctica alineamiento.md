@@ -66,5 +66,5 @@ Ahora descargaremos el genoma de referencia de la mitocondria de _Salmo salar_ e
 ![SALMO](https://user-images.githubusercontent.com/80992964/122481025-93b22580-cf93-11eb-93d6-bbfde7568342.png)  
 
 ## **Carga de secuencias a POMEO**  
-Para esto utilizaremos WinSCP, debes iniciar sesión, guardar tus datos y conectarte como se indica en la siguiente imagen. Al conectar debes ingresar nuevamente tu contraseña y aparecerá la interfaz de tu servidor con las carpetas que tienes creadas, aquí ingresarás en tu carpeta de alineamiento y arrastrarás el archivo descagado del genoma mitocondrial a la misma.  
+Para esto utilizaremos WinSCP, debes iniciar sesión, guardar tus datos y conectarte como se indica en la siguiente imagen. Al conectar debes ingresar nuevamente tu contraseña y aparecerá la interfaz de tu servidor con las carpetas que tienes creadas, aquí ingresarás en tu carpeta de alineamiento y arrastrarás el archivo descagado del genoma mitocondrial a la misma. Cuando termines lo anterior puedes ingresar a POMEO, listar tu carpeta de alineamiento con `ls` y verás tu archivo junto con tus secuencias fastq.   
 ![WINSCP](https://user-images.githubusercontent.com/80992964/122483002-40da6d00-cf97-11eb-81f3-abfffec4ec6c.png)
