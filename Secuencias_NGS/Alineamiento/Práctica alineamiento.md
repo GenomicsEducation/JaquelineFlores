@@ -88,7 +88,7 @@ Para el alineamiento tendremos las siguientes etapas:
  - Exploración de datos con Samtools  
 
 Para ejecutar todas las etapas anteriores en ese orden se debe crear un script: `nano aln_mt.sh`  
-_Nota: Encontrarás el script [aquí]()._  
+_Nota: Encontrarás el script [aquí](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Alineamiento/Scripts_alineamiento/aln_mt.sh)._  
 
 Al ejecutar el script tendras tus archivos SAM/BAM, y puedes observar tu archivo sam con el comando `less` de linux (recuerda que es un archivo de texto plano): `less SRR2006763.sam`  
 
