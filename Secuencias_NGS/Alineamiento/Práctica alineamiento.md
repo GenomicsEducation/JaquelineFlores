@@ -7,7 +7,7 @@ Para realizar esta tarea se han desarrollado varios programas como lo son, BWA (
 
 El resultado del mapeo o alineamiento se guarda en un archivo d etexto plano con formato SAM (Sequence Alignment Map) o su equivalente comprimido en binario (BAM). Este archivo contiene de forma codificada toda la información de dónde y cómo cada read se alineo al genoma referencia. De el se pueden luego extraer información de variantes para análisis poblacional o estudios de asociación genómica o información de conteo de reads en regiones codificantes para en análisis de expresión de genes.  
 
-_NOTA: Los scripts empleados en la presente práctica podrá encontrarlos en la carpeta [Scripts_alineamiento](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Scripts) ubicada dentro del directorio [Alineamiento](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Alineamiento)._  
+_NOTA: Los scripts empleados en la presente práctica podrá encontrarlos en la carpeta [Scripts_alineamiento](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Alineamiento/Scripts_alineamiento) ubicada dentro del directorio [Alineamiento](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Alineamiento)._  
 
 
 # **Interpretación del formato SAM**  
@@ -15,4 +15,11 @@ El formato SAM consta de un encabezado que comienza con el símbolo @ y una secc
 
 ![SAM](https://user-images.githubusercontent.com/80992964/122462329-13cb9180-cf7a-11eb-8e00-c3a687e97f22.png)  
 
+# **Notas importantes**  
+## **Origen de las muestras**  
+Para facilitar el proceso se utilizará una muestra que provieme de la base de datos SRA del NCBI, que corresponde a lecturas crudas del salmón del Atlántico _Salmo salar_ en formato fastq, obtenidas por secuenciación de extremos emparejados con un secuenciador Illumina HiSeq2000. La muestra se alineará al genoma de la mitocondria ya que por su pequeño tamaño, el alineamiento no debería tardar más de unos pocos minutos.
 
+## **Etapas del alineamiento**  
+ 1. Descargar Genoma de referencia de la mitocondria e indexar.  
+ 2. Alinear muestra con genoma de referencia.  
+ 3. Analizar el resultado del alineamiento.  
