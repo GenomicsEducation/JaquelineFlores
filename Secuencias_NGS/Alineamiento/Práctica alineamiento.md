@@ -99,6 +99,4 @@ Como puedes observar en el punto 4 de la imagen superior, cada secuencia contien
 
 También puedes realizar un análisis estadístico estandar con los siguientes comandos: `samtools flagstat SRR2006763.bam > muestra_stat.txt`  
 ![STAT](https://user-images.githubusercontent.com/80992964/122485732-3d49e480-cf9d-11eb-9398-e95092f2aeeb.png)  
-De la información obtenida podemos determinar que hay un total de 4,395 lecturas que pasaron el control de calidad, y ninguna que no pasó dicho control.  
-Asimismo, podemos decir que hay 2,196 lecturas del Read1 y 2,197 lecturas del Read2. Del total de lecturas (4,395) sólo 4,206 (95.74% del total de lecturas) se lograron aparear apropiadamente, es decir, tanto la secuencia forward como reverse se aparearon correctamente.
-
+De la información obtenida podemos determinar que hay un total de 4,395 lecturas que pasaron el control de calidad, y ninguna que no pasó dicho control. Asimismo, podemos decir que hay 2,196 lecturas del Read1 y 2,197 lecturas del Read2. Del total de lecturas (4,395) sólo 4,206 (95.74% del total de lecturas) se lograron aparear apropiadamente, es decir, tanto la secuencia forward como reverse se aparearon correctamente.
