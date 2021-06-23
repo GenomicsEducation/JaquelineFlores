@@ -101,7 +101,7 @@ Como puedes observar en el punto 4 de la imagen superior, cada secuencia contien
 | `samtools flags 77`  | read 1 - emparejado no mapeado | 
 | `samtools flags 141` | read 2 - emparejado no mapeado |
 | `samtools flags 99` | Reverse de un read 1 adecuadamente emparejado |
-| `samtools view -f 66 SRR2006763.bam | head -n 10` | Busca solo reads emparejados en el archivo bam |  
+| `samtools view -f 66 SRR2006763.bam` `| head -n 10` | Busca solo reads emparejados en el archivo bam |  
 
 
 ![FLAGS](https://user-images.githubusercontent.com/80992964/122486148-163fe280-cf9e-11eb-8e9f-27a327e71434.png)
