@@ -94,6 +94,7 @@ Al ejecutar el script tendras tus archivos SAM/BAM, y puedes observar tu archivo
 ![ALIN](https://user-images.githubusercontent.com/80992964/122484521-5f8e3300-cf9a-11eb-83ff-5f1625e307e2.png)  
 
 Como puedes observar en el punto 4 de la imagen superior, cada secuencia contiene varias columnas. La primera columna hace referencia al nombre de la secuencia, y de ahí en delante cada número, signo o símbolo tiene un significado particular. Por ejemplo, puedes ejecutar el siguiente comando para identificar que significa cada número de la columna 2, sólo sustituye "(número)" por el número de interés: `samtools flags (número)`. Te dejo la siguiente tabla, donde encontrarás algunos comandos que puedes emplear, y en la siguiente imagen podrás ver un ejemplo de los resultados que obtendrías.    
+
 | Comando | Función |
 | ------------- | ------------- |
 | `samtools flags unmap` | proporciona los reads no mapeados |
@@ -101,6 +102,8 @@ Como puedes observar en el punto 4 de la imagen superior, cada secuencia contien
 | `samtools flags 141` | read 2 - emparejado no mapeado |
 | `samtools flags 99` | Reverse de un read 1 adecuadamente emparejado |
 | `samtools view -f 66 SRR2006763.bam | head -n 10` | Busca solo reads emparejados en el archivo bam |  
+
+
 ![FLAGS](https://user-images.githubusercontent.com/80992964/122486148-163fe280-cf9e-11eb-8e9f-27a327e71434.png)
 
 
