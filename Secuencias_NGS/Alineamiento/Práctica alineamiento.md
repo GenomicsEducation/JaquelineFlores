@@ -119,10 +119,10 @@ Para continuar con este ejercicio deberás descargar el software IGV, y lo podr�
 _Nota: El archivo de genoma visualizado tiene características como pistas de genes e ideogramas de cromosomas, puede navegar a través de la imagen haciendo zoom sobre las regiones genómicas que usted desee explorar._  
 
 
-_Pasos para visualización de genoma de referencia y mitocondrial._
+**_Pasos para visualización de genoma de referencia y mitocondrial._**
 ![IGV](https://user-images.githubusercontent.com/80992964/123194363-fa3fb380-d46b-11eb-9469-aa1fc8f13d22.png)  
 
-_Visualización de los datos genómicos._
+**_Visualización de los datos genómicos._**  
 ![VISUAL](https://user-images.githubusercontent.com/80992964/123195086-2f003a80-d46d-11eb-97dc-40fb99e49f68.png)
 
 
