@@ -116,13 +116,12 @@ Integrative Genomics Viewer (IGV) es una herramienta interactiva de alto rendimi
 
 Para continuar con este ejercicio deberás descargar el software IGV, y lo podrás hacer ingresando en este [enlace](https://software.broadinstitute.org/software/igv/download). Una vez descargado, abre el visualizador para cargar el genoma de referencia lo que podrás lograr al dar click en el recuadro "more", como indica el paso 2 de la imagen de abajo. Esto abrirá una nueva ventana con los genomas precargados con los que cuenta IGV, ahí deberás buscar el genoma de _Salmo salar_ y dar click en "ok", tal como se indica en el pasos 3 de la imagen. Una vez hecho esto el genoma estará cargado, y aparecerán los identificadores de todos los cromosomas de esta especie y también el genoma de mitocondrial, el cual deberás seleccionar (NC_001960.1), como se muestra en el paso 4 de la imagen. Por último, deberás cargar tu archivo ".bam" de la alineación tal como se muestra en el paso 5 de la imagen. Cuando se cargue el genoma mitocondrial, se podrá visualizar la salida del alineamiento, como se nota en el paso 6 (última imagen).  
 
-_Nota: El archivo de genoma visualizado tiene características como pistas de genes e ideogramas de cromosomas, puede navegar a través de la imagen haciendo zoom sobre las regiones genómicas que usted desee explorar._  
-
 
 **_Pasos para visualización de genoma de referencia y mitocondrial._**
 ![IGV](https://user-images.githubusercontent.com/80992964/123194363-fa3fb380-d46b-11eb-9469-aa1fc8f13d22.png)  
 
 **_Visualización de los datos genómicos._**  
-![VISUAL](https://user-images.githubusercontent.com/80992964/123195086-2f003a80-d46d-11eb-97dc-40fb99e49f68.png)
+![VISUAL](https://user-images.githubusercontent.com/80992964/123195086-2f003a80-d46d-11eb-97dc-40fb99e49f68.png)  
 
+_Nota: El archivo de genoma visualizado tiene características como pistas de genes e ideogramas de cromosomas, puede navegar a través de la imagen haciendo zoom sobre las regiones genómicas que usted desee explorar._  
 
