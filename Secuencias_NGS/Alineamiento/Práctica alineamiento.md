@@ -123,5 +123,5 @@ Para continuar con este ejercicio deberás descargar el software IGV, y lo podr�
 **_Visualización de los datos genómicos._**  
 ![VISUAL](https://user-images.githubusercontent.com/80992964/123195086-2f003a80-d46d-11eb-97dc-40fb99e49f68.png)  
 
-_Nota: El archivo de genoma visualizado tiene características como pistas de genes e ideogramas de cromosomas, puede navegar a través de la imagen haciendo zoom sobre las regiones genómicas que usted desee explorar._  
+_Nota: El archivo del genoma visualizado tiene características como pistas de genes e ideogramas de cromosomas, puedes navegar a través de la imagen haciendo zoom sobre las regiones genómicas que desees explorar._  
 
