@@ -125,8 +125,14 @@ Ya hemos determinado que existen cera de 50.000 variantes, pero no todas ellas t
 
 _Nota: Aquí encontrarás unas imagenes ilustrativas del proceso antes descrito._
 ![pasos](https://user-images.githubusercontent.com/80992964/123895362-55b6e900-d925-11eb-8ddb-be24986b7b27.png)  
+
 ![variantes](https://user-images.githubusercontent.com/80992964/123895375-5fd8e780-d925-11eb-82b6-4014e0effe36.png)  
+
 ![final](https://user-images.githubusercontent.com/80992964/123895444-7b43f280-d925-11eb-81fb-f0c18b3e3f45.png)
+
+![archivo](https://user-images.githubusercontent.com/80992964/123905178-712aef80-d937-11eb-8dae-106cd55ea529.png)  
+
+![grep](https://user-images.githubusercontent.com/80992964/123905566-370e1d80-d938-11eb-8922-45488d51f89b.png)
 
 
 ## **Análisis de variantes con vcftools**  
