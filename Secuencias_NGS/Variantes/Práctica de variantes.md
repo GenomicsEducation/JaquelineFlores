@@ -146,4 +146,6 @@ vcftools es una potente herramienta de análisis de archivos vcf, lo que nos per
 ## **Visualización de variantes con IGV**  
 1. Descargue el archivo "raw_variants.vcf" generado en su directorio "variant_call" y explore con el software IGV.  
 ![SNP](https://user-images.githubusercontent.com/80992964/123904892-dfbb7d80-d936-11eb-9f3c-655d1155cbb7.png)  
+
+2. De zoom en la zona seleccionada para ver detalles.  
 ![zoom](https://user-images.githubusercontent.com/80992964/123904835-c31f4580-d936-11eb-8a01-9014973c98b6.png)  
