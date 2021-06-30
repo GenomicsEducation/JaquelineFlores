@@ -52,7 +52,7 @@ Conectaremos al servidor de interés utilizando la dirección IP y puerto corres
 4. Para la instalación los software vcftools: `conda install -c bioconda vcftools`  
 
 _NOTA: Recuerda que cuando ha terminado de ejecutarse algún comando aparecerá de nuevo la línea (base) dónde te encuentras trabajando, y aparecerá el cuadro de color que te indica que puedes escribir, esa es la señal de que se ha terminado de ejecutar un comando y que puedes continuar trabajando._  
-![CONFIG](https://user-images.githubusercontent.com/80992964/123892303-f0142e00-d91f-11eb-935c-bbc1f8ff19d5.png)  
+![CONFIG](https://user-images.githubusercontent.com/80992964/123894080-2bfcc280-d923-11eb-93af-e24be42ec226.png)  
 
 
 ## **Creación de directorio**  
@@ -83,8 +83,23 @@ _El genoma de salmon tiene 29 cromosomas denominados NC_027300.1, NC_027301.1, N
 6. Investigue ahora los contigs no mapeados del salmón con los siguientes comandos:  
     `grep -c 'NW_' ref_genome.fna`  
     `grep -c 'NW_' ref_genome.fna.fai`  
-_Note que en todos los casos el comando trabaja más rápido en el archivo indexado ".fai"_  
+_Note que en todos los casos el comando trabaja más rápido en el archivo indexado ".fai". Como referencia puedes revisar las imagenes inferiores para darte una idea de que tendrás que obtener como resultado de cada comando._  
 
 ![1-4](https://user-images.githubusercontent.com/80992964/123893194-93197780-d921-11eb-9c7f-a264fafab23d.png)  
-![5-6](https://user-images.githubusercontent.com/80992964/123893602-55691e80-d922-11eb-9813-b3b0c3e7c803.png)
+![5-6](https://user-images.githubusercontent.com/80992964/123893602-55691e80-d922-11eb-9813-b3b0c3e7c803.png)  
+
+
+## **LLamado de variantes**  
+1. Para realizar el llamado de variantes debe obtener primero un archivo que representará un "diccionario de referencias" del genoma de referencia: `java -jar picard.jar CreateSequenceDictionary R=ref_genome.fna O=ref_genome.dict`  
+_Nota: La salidad del comando anterior será un archivo con extensión .dict, explorero con less o head._  
+
+
+
+
+
+
+![pasos](https://user-images.githubusercontent.com/80992964/123895362-55b6e900-d925-11eb-8ddb-be24986b7b27.png)  
+![variantes](https://user-images.githubusercontent.com/80992964/123895375-5fd8e780-d925-11eb-82b6-4014e0effe36.png)  
+![final](https://user-images.githubusercontent.com/80992964/123895444-7b43f280-d925-11eb-81fb-f0c18b3e3f45.png)
+
 
