@@ -108,7 +108,7 @@ _Note que la mayoría corresponde a los cromosomas y contigs, por lo que las var
 8. Use grep para contar el número de variantes detectadas: `grep "^#" -c -v raw_variants.vcf`  
 9. El llamado de variantes lo hemos hecho con una sola biomuestra, por lo que podríamos listar el nombre de esta muestra usando el siguiente comando: `grep "^#CHROM" raw_variants.vcf | cut -f 10-`  
 
-¿Cómo entender la codificación de los archivos vcf?  
+_**¿Cómo entender la codificación de los archivos vcf?**_  
 La principal complejidad de los archivos vcf radica en la forma en que está codificada la información contenida en el. Afortunadamente en el mismo archivo podemos encontrar alguna información para poder comprender de mejor forma como interpretar las variantes encontradas.  
 10. Ejecute el siguiente comando para imprimir el nombre de las columnas del llamado de variantes: `grep "^#CHROM" raw_variants.vcf`  
 11. Ejecute el siguiente comando para listar las 10 primeras variantes: `grep "^#" -v raw_variants.vcf | head`  
@@ -116,15 +116,32 @@ La principal complejidad de los archivos vcf radica en la forma en que está cod
   `grep "##INFO" raw_variants.vcf`  
   `grep "##FORMAT" raw_variants.vcf`  
 
-Extraer variantes con alta calidad  
+_**Extraer variantes con alta calidad*_  
 Ya hemos determinado que existen cera de 50.000 variantes, pero no todas ellas tienen alta calidad, lo que está determinado básicamente por el numero de reads sobre los cuales se han identificado las variantes. En terminos muy básicos la mayor calidad estará dada por un alto número de reads. Use el siguiente comando para extraer las variantes con calidad mayor a 100. Note que el comando se divide en tres partes, la primera extrae solo las variantes del archivo ".vcf", luego con un pipeline y el comando `awk` de linux extraemos e imprimimos solo las filas con calidad mayor a 100 (en la columna 6 está la calidad) y finalmente llevamos el print a un fichero denominado "hq_variant.txt" (variantes de alta calidad) el cual podemos explorar.  
 13. Comando para extraer, imprimir y pasar a fichero: `grep -v "#" raw_variants.vcf | awk '{if ($6 > 100 ) print }' > hq_variant.txt`
 14. Comandos para explorar:  
   `grep "NC_" -c -v hq_variant.txt`  
   `grep "NW_" -c -v hq_variant.txt`  
 
+_Nota: Aquí encontrarás unas imagenes ilustrativas del proceso antes descrito._
 ![pasos](https://user-images.githubusercontent.com/80992964/123895362-55b6e900-d925-11eb-8ddb-be24986b7b27.png)  
 ![variantes](https://user-images.githubusercontent.com/80992964/123895375-5fd8e780-d925-11eb-82b6-4014e0effe36.png)  
 ![final](https://user-images.githubusercontent.com/80992964/123895444-7b43f280-d925-11eb-81fb-f0c18b3e3f45.png)
 
 
+## **Análisis de variantes con vcftools**  
+vcftools es una potente herramienta de análisis de archivos vcf, lo que nos permite simplificar esta tarea.  
+1. Para contar individuos y variantes de un archivo ".vcf" ejecute el siguiente comando: `vcftools --vcf raw_variants.vcf`  
+2. Para determinar las frecuencias de todos los alelos ejecute el siguiente comando: `vcftools --vcf raw_variants.vcf --freq -c > hq.freqs.txt`  
+3. Para filtrar por algún cromosoma particular incluyendo el argumento `–chr`:  
+  `vcftools --vcf raw_variants.vcf --chr NC_027300.1`  
+  `vcftools --vcf raw_variants.vcf --freq -c --chr NC_027300.1`  
+4. Para excluir, por ejemplo, el genoma mitocondrial con `–not-chr`:  
+  `vcftools --vcf raw_variants.vcf –not-chr NC_001960.1`  
+  `vcftools --vcf raw_variants.vcf --freq -c --not-chr NC_001960.1`  
+5. Para extraer solo los INDELS con el argumento `–keep-only-indel`: `vcftools --vcf raw_variants.vcf --freq -c --chr NC_027300.1 --keep-only-indel`  
+6. Para extraer solo los SNP con el argumento `–remove-indels`: `vcftools --vcf raw_variants.vcf --freq -c --chr NC_027300.1 --remove-indel`  
+
+
+## **Visualización de variantes con IGV**  
+1. Descargue el archivo "raw_variants.vcf" generado en su directorio "variant_call" y explore con el software IGV.
