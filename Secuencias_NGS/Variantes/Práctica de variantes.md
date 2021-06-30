@@ -40,3 +40,51 @@ Las muestras SRR2009653.fastq_1, SRR2009653.fastq_2. Provienen de un set de 45 s
 
 # **Práctica de Alineamiento**  
 ## **Conectar a servidor**  
+Conectaremos al servidor de interés utilizando la dirección IP y puerto correspondientes (en este caso conectaremos a POMEO con los datos: IP 200.54.220.141, puerto 22), mediante el software PuTTy y nuestra clave de acceso.  
+![POMEO](https://user-images.githubusercontent.com/80992964/123889420-1b484e80-d91b-11eb-8d43-ec3227073a02.png)  
+
+## **Configurar bioconda e instalar programas para análisis**  
+1. Para configurar el canal bioconda se debe ejecutar el siguiente comando: `conda config --add channels bioconda`  
+   _Al realizar la ejecución simplemente aparecera de nuevo la línea para escribir comandos, en mi caso aparece un mensaje que indica que ya tengo bioconda en mi lista de canales._  
+2. Para la instalación del software gatk4: `conda install -c bioconda gatk4`  
+  _Se realizará la instalación del software, recordar que en un punto pedirá inficar "y" o "yes" para continuar con la instalación._
+3. Para la instalación del software picard tools: `wget https://github.com/broadinstitute/picard/releases/download/2.8.1/picard.jar`  
+4. Para la instalación los software vcftools: `conda install -c bioconda vcftools`  
+
+_NOTA: Recuerda que cuando ha terminado de ejecutarse algún comando aparecerá de nuevo la línea (base) dónde te encuentras trabajando, y aparecerá el cuadro de color que te indica que puedes escribir, esa es la señal de que se ha terminado de ejecutar un comando y que puedes continuar trabajando._  
+![CONFIG](https://user-images.githubusercontent.com/80992964/123892303-f0142e00-d91f-11eb-935c-bbc1f8ff19d5.png)  
+
+
+## **Creación de directorio**  
+Para el caso de esta práctica el directorio y los archivos necesarios para ejecutar esta práctica ya habían sido creados e instalados en mi directorio personal, por lo que solo era necesario ingresar a el y explorar los archivos de trabajo. Usted deberá crear el directorio y para ello dejo las indicaciones completas.
+1. Crear una carpeta denominada "variant_call" en tu usuario de home2: `mkdir variant_call`  
+2. Ingresar a la carpeta: `cd variant_call`  
+3. Listar los archivos que están contenidos en la carpeta: `ls -l -h`  
+_El archivo contiene los siguientes archivos necesarios para efectuar el llamado de variantes:  
+"SRR2006763.sort.bam": previamente obtenido con las actividades aprendidas en clases anteriores.  
+ref_genome.fna: genoma de referencia de _Salmo salar_ en formato FASTA  
+ref_genome.fna.fai: archivo indexado del genoma de referencia con 5 columna que corresponden a columnas 1= contig, 2 = tamaño, 3= ubicación, 4= basesPerLine y 5= bytesPerLine._  
+4. Explorar los archivos "ref_genome.fna" y "ref_genome.fna.bai" con los siguientes comandos:  
+_El genoma de salmon tiene 29 cromosomas denominados NC_027300.1, NC_027301.1, NC_027302.1, hasta el NC_027328.1, pero además muchos contigs sin mapear a ninguno de ellos los que puede identificar porque comienzan con NW por ejemplo NW_012341867.1._  
+ 4.1.`less`  
+     `less ref_genome.fna`  
+     `less ref_genome.fna.fai`  
+ 4.2.`head`  
+     `head -n 20 ref_genome.fna`  
+     `head -n 30 ref_genome.fna.fai`   
+ 4.3.`tail`  
+     `tail -n 20 ref_genome.fna`  
+     `tail -n 20 ref_genome.fna.fai`  
+5. Investigue ahora los cromosomas del salmón con los siguientes comandos:  
+    `grep 'NC_' ref_genome.fna`  
+    `grep -c 'NC_' ref_genome.fna`  
+    `grep 'NC_' ref_genome.fna.fai`  
+    `grep -c 'NC_' ref_genome.fna.fai`  
+6. Investigue ahora los contigs no mapeados del salmón con los siguientes comandos:  
+    `grep -c 'NW_' ref_genome.fna`  
+    `grep -c 'NW_' ref_genome.fna.fai`  
+_Note que en todos los casos el comando trabaja más rápido en el archivo indexado ".fai"_  
+
+![1-4](https://user-images.githubusercontent.com/80992964/123893194-93197780-d921-11eb-9c7f-a264fafab23d.png)  
+![5-6](https://user-images.githubusercontent.com/80992964/123893602-55691e80-d922-11eb-9813-b3b0c3e7c803.png)
+
