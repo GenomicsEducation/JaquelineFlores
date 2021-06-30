@@ -92,11 +92,36 @@ _Note que en todos los casos el comando trabaja más rápido en el archivo index
 ## **LLamado de variantes**  
 1. Para realizar el llamado de variantes debe obtener primero un archivo que representará un "diccionario de referencias" del genoma de referencia: `java -jar picard.jar CreateSequenceDictionary R=ref_genome.fna O=ref_genome.dict`  
 _Nota: La salidad del comando anterior será un archivo con extensión .dict, explorero con less o head._  
+2. Añadir grupos de reads al archivo sort bam:  
+  `java -jar picard.jar AddOrReplaceReadGroups I=SRR2006763.sort.bam O=SSRR2006763_sorted_RG.bam ID=sample LB=Paired-end PL=Illumina PU=Unknown SM=sample`  
+3. Indexar archivo generado con Read groups: `samtools index SSRR2006763_sorted_RG.bam`  
+4. Para el llamado de variantes se debe ejecutar el comando `HaplotypeCaller` del software GATK, debe considerar que este proceso demorará al menos una hora:  
+  `gatk HaplotypeCaller -R ref_genome.fna -I SRR2006763_sorted_RG.bam -O raw_variants.vcf`  
+5. Al culminar la ejecución del comando liste su directorio y verifique que se ha creado su archivo de salida: `ls`  
+_Nota: Deberá obtener el archivo "raw_variants.vcf"._  
+7. Explore el archivo de llamado de variantes con los comandos less, head, tail:  
+  `less raw_variants.vcf`  
+  `head -n 30 raw_variants.vcf`  
+  `tail -n 30 raw_variants.vcf`  
+_Note que la mayoría corresponde a los cromosomas y contigs, por lo que las variantes están muy abajo en el archivo y solo podemos ver algunas variantes del genoma mitocondrial cuando usamos el comando tail._  
+8. Use grep para contar el numero de líneas en el "vcf header": `grep "^#" -c  raw_variants.vcf`  
+9. Use grep para contar el número de variantes detectadas: `grep "^#" -c -v raw_variants.vcf`  
+10. El llamado de variantes lo hemos hecho con una sola biomuestra, por lo que podríamos listar el nombre de esta muestra usando el siguiente comando: `grep "^#CHROM" raw_variants.vcf | cut -f 10-`  
 
+¿Cómo entender la codificación de los archivos vcf?  
+La principal complejidad de los archivos vcf radica en la forma en que está codificada la información contenida en el. Afortunadamente en el mismo archivo podemos encontrar alguna información para poder comprender de mejor forma como interpretar las variantes encontradas.  
+11. Ejecute el siguiente comando para imprimir el nombre de las columnas del llamado de variantes: `grep "^#CHROM" raw_variants.vcf`  
+12. Ejecute el siguiente comando para listar las 10 primeras variantes: `grep "^#" -v raw_variants.vcf | head`  
+13. Ejecute los siguientes comandos para entender la codificación de la columna "INFO" y "FORMAT" que contine la información del genotipo de la muestra para las primeras 10 variantes:  
+  `grep "##INFO" raw_variants.vcf`  
+  `grep "##FORMAT" raw_variants.vcf`  
 
-
-
-
+Extraer variantes con alta calidad  
+Ya hemos determinado que existen cera de 50.000 variantes, pero no todas ellas tienen alta calidad, lo que está determinado básicamente por el numero de reads sobre los cuales se han identificado las variantes. En terminos muy básicos la mayor calidad estará dada por un alto número de reads. Use el siguiente comando para extraer las variantes con calidad mayor a 100. Note que el comando se divide en tres partes, la primera extrae solo las variantes del archivo ".vcf", luego con un pipeline y el comando `awk` de linux extraemos e imprimimos solo las filas con calidad mayor a 100 (en la columna 6 está la calidad) y finalmente llevamos el print a un fichero denominado "hq_variant.txt" (variantes de alta calidad) el cual podemos explorar.  
+14. Comando para extraer, imprimir y pasar a fichero: `grep -v "#" raw_variants.vcf | awk '{if ($6 > 100 ) print }' > hq_variant.txt`
+15. Comandos para explorar:  
+  `grep "NC_" -c -v hq_variant.txt`  
+  `grep "NW_" -c -v hq_variant.txt`  
 
 ![pasos](https://user-images.githubusercontent.com/80992964/123895362-55b6e900-d925-11eb-8ddb-be24986b7b27.png)  
 ![variantes](https://user-images.githubusercontent.com/80992964/123895375-5fd8e780-d925-11eb-82b6-4014e0effe36.png)  
