@@ -106,6 +106,7 @@ _Nota: Deberá obtener el archivo "raw_variants.vcf"._
 _Note que la mayoría corresponde a los cromosomas y contigs, por lo que las variantes están muy abajo en el archivo y solo podemos ver algunas variantes del genoma mitocondrial cuando usamos el comando tail._  
 8. Use grep para contar el numero de líneas en el "vcf header": `grep "^#" -c  raw_variants.vcf`  
 9. Use grep para contar el número de variantes detectadas: `grep "^#" -c -v raw_variants.vcf`  
+
 10. El llamado de variantes lo hemos hecho con una sola biomuestra, por lo que podríamos listar el nombre de esta muestra usando el siguiente comando: `grep "^#CHROM" raw_variants.vcf | cut -f 10-`  
 
 ¿Cómo entender la codificación de los archivos vcf?  
