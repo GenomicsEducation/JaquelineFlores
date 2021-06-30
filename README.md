@@ -34,4 +34,8 @@ La carpeta [Secuencias_NGS](https://github.com/GenomicsEducation/JaquelineFlores
 
 
 ## Práctica de Introducción al Alineamiento de Secuencias NGS.
-En la carpeta [Secuencias_NGS](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS) encontrarás a su vez la carpeta [Alineamiento](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Alineamiento), que contiene el archivo [Práctica de alineamiento.md](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Alineamiento/Pr%C3%A1ctica%20alineamiento.md), en el que podrás revisar las instrucciones para realizar el alineamiento de secuencias NGS y la visualización gráfica de tu archivo resultante, así como información importante para la interpretación de los resultados.
+En la carpeta [Secuencias_NGS](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS) encontrarás a su vez la carpeta [Alineamiento](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Alineamiento), que contiene el archivo [Práctica de alineamiento.md](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Alineamiento/Pr%C3%A1ctica%20alineamiento.md), en el que podrás revisar las instrucciones para realizar el alineamiento de secuencias NGS y la visualización gráfica de tu archivo resultante, así como información importante para la interpretación de los resultados.  
+
+
+## Práctica de Introducción al Llamado de Variantes de Secuencias NGS.
+En la carpeta [Secuencias NGS]() se encuentra la carpeta [Variantes](), en la que podrás encontrar el archivo [Práctica de variantes.md](), mismo que contiene información para realizar una práctica para el llamado de variantes a partir de secuencias NGS y su posterior visualización gráfica.
