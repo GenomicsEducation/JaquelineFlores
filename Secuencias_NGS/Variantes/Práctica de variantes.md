@@ -137,11 +137,13 @@ vcftools es una potente herramienta de análisis de archivos vcf, lo que nos per
   `vcftools --vcf raw_variants.vcf --chr NC_027300.1`  
   `vcftools --vcf raw_variants.vcf --freq -c --chr NC_027300.1`  
 4. Para excluir, por ejemplo, el genoma mitocondrial con `–not-chr`:  
-  `vcftools --vcf raw_variants.vcf –not-chr NC_001960.1`  
+  `vcftools --vcf raw_variants.vcf –-not-chr NC_001960.1`  
   `vcftools --vcf raw_variants.vcf --freq -c --not-chr NC_001960.1`  
-5. Para extraer solo los INDELS con el argumento `–keep-only-indel`: `vcftools --vcf raw_variants.vcf --freq -c --chr NC_027300.1 --keep-only-indel`  
-6. Para extraer solo los SNP con el argumento `–remove-indels`: `vcftools --vcf raw_variants.vcf --freq -c --chr NC_027300.1 --remove-indel`  
+5. Para extraer solo los INDELS con el argumento `–-keep-only-indels`: `vcftools --vcf raw_variants.vcf --freq -c --chr NC_027300.1 --keep-only-indels`  
+6. Para extraer solo los SNP con el argumento `–-remove-indels`: `vcftools --vcf raw_variants.vcf --freq -c --chr NC_027300.1 --remove-indels`  
 
 
 ## **Visualización de variantes con IGV**  
-1. Descargue el archivo "raw_variants.vcf" generado en su directorio "variant_call" y explore con el software IGV.
+1. Descargue el archivo "raw_variants.vcf" generado en su directorio "variant_call" y explore con el software IGV.  
+![SNP](https://user-images.githubusercontent.com/80992964/123904892-dfbb7d80-d936-11eb-9f3c-655d1155cbb7.png)  
+![zoom](https://user-images.githubusercontent.com/80992964/123904835-c31f4580-d936-11eb-8a01-9014973c98b6.png)  
