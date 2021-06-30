@@ -9,7 +9,7 @@ El presente trabajo tiene por objeto realizar el llamado de variantes y la anota
 ![VCF](https://user-images.githubusercontent.com/80992964/123888195-93f9db80-d918-11eb-9b15-3527101d259e.png)  
 Estructura formato VCF, tomado de: https://www.slideshare.net/AmazonWebServices/dat311-largescale-genomic-analysis-with-amazon-redshift  
 
-_NOTA: Los scripts empleados en la presente práctica podrá encontrarlos en la carpeta [Scripts_variantes]() ubicada dentro del directorio [Variantes](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Variantes)._  
+_NOTA: Los archivos descargados o empleados en la visualización podrás encontrarlos en la carpeta [raw]() ubicada dentro del directorio [Variantes](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Variantes)._  
 
 
 # **Notas importantes**  
@@ -147,6 +147,12 @@ vcftools es una potente herramienta de análisis de archivos vcf, lo que nos per
   `vcftools --vcf raw_variants.vcf --freq -c --not-chr NC_001960.1`  
 5. Para extraer solo los INDELS con el argumento `–-keep-only-indels`: `vcftools --vcf raw_variants.vcf --freq -c --chr NC_027300.1 --keep-only-indels`  
 6. Para extraer solo los SNP con el argumento `–-remove-indels`: `vcftools --vcf raw_variants.vcf --freq -c --chr NC_027300.1 --remove-indels`  
+
+![vcf](https://user-images.githubusercontent.com/80992964/123906217-607b7900-d939-11eb-8f72-5c3d57491412.png)  
+
+![hq](https://user-images.githubusercontent.com/80992964/123906254-712bef00-d939-11eb-90da-9afab677a1d9.png)  
+
+![variants](https://user-images.githubusercontent.com/80992964/123906298-843ebf00-d939-11eb-8641-108ac1140338.png)
 
 
 ## **Visualización de variantes con IGV**  
