@@ -11,7 +11,7 @@ El presente trabajo tiene por objeto realizar el llamado de variantes y la anota
 ![VCF](https://user-images.githubusercontent.com/80992964/123888195-93f9db80-d918-11eb-9b15-3527101d259e.png)  
 Estructura formato VCF, tomado de: https://www.slideshare.net/AmazonWebServices/dat311-largescale-genomic-analysis-with-amazon-redshift  
 
-_NOTA: Los archivos descargados o empleados en la visualización podrás encontrarlos en la carpeta [raw]() ubicada dentro del directorio [Variantes](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Variantes)._  
+_NOTA: Los archivos descargados o empleados en la visualización podrás encontrarlos en la carpeta [Docs_Variantes]() ubicada dentro del directorio [Variantes](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Variantes)._  
 
 
 # **Notas importantes**  
