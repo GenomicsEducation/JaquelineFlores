@@ -1,4 +1,8 @@
 # **Introducción al análisis de secuencias NGS**  
+El contenido de la presente práctica fue elaborado por:
+_Dr. José A. Gallardo_
+_Dr(c) Margarita Rivera_
+
 Las tecnologías de secuenciación de próxima generación han evolucionado significativamente para proporcionar una mayor producción de datos (Taishan, Chitnis, Monos, & Dinh, 2021). Sin embargo, las plataformas son susceptibles a una amplia gama de fallas químicas e instrumentales (Stephan et al., 2014), por lo que, los datos obtenidos pueden tener un fuerte ruido de fondo, contaminación de los adaptadores, baja calidad de secuenciación, entre otros (He et al., 2020), lo que posteriormente representa problemas significativos en la precisión de la detección de variantes o regiones genómicas objetos de estudio. Por ello, el control de calidad, en el preprocesamiento de datos, se torna esencial, a fin de contar con datos limpios para evitar errores en análisis posteriores.  
 
 _NOTA: Todos los scripts empleados en la presente práctica podrá encontrarlos en la carpeta [Scripts_análisis](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/An%C3%A1lisis/Scripts_an%C3%A1lisis) ubicada dentro del directorio [Análisis](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/An%C3%A1lisis)._  
