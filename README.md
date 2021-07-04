@@ -38,4 +38,8 @@ En la carpeta [Secuencias_NGS](https://github.com/GenomicsEducation/JaquelineFlo
 
 
 ## Práctica de Introducción al Llamado de Variantes de Secuencias NGS.
-En la carpeta [Secuencias_NGS](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS) se encuentra la carpeta [Variantes](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Variantes), en la que podrás encontrar el archivo [Práctica de variantes.md](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Variantes/Pr%C3%A1ctica%20de%20variantes.md), mismo que contiene información para realizar una práctica para el llamado de variantes a partir de secuencias NGS y su posterior visualización gráfica.
+En la carpeta [Secuencias_NGS](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS) se encuentra la carpeta [Variantes](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Variantes), en la que podrás encontrar el archivo [Práctica de variantes.md](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Variantes/Pr%C3%A1ctica%20de%20variantes.md), mismo que contiene información para realizar una práctica para el llamado de variantes a partir de secuencias NGS y su posterior visualización gráfica.  
+
+
+## Práctica de Introducción a Genómica Poblacional y Ancestría.
+En la carpeta [Secuencias_NGS](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS) podrás encuentrar la carpeta [Genómica Poblacional y Ancestría](), que contiene el archivo [Práctica Genómica Poblacional y Ancestría.md](), cuya información te permitirá, como su nombre lo indica, realizar una práctica del análisis de genómica poblacional y ancestría, empleando como ejemplo archivos de variantes VCF de _Salmo salar_.
