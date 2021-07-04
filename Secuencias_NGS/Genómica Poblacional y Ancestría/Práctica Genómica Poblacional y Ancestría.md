@@ -5,7 +5,7 @@ Para el mejor entendimiento de la práctica y las actividades realizadas, te dej
 
 En esta práctica trabajaras de forma simultanea en PuTTy y Rstudio, por lo que encontrarás aquí notas para la preparación de ambas herramientas.  
 
-_Nota: Todos los archivos descargados y visualizados en Rstudio, así como los códigos empleados para la generación de los gráficos aquí descritos, se encuentran en la carpeta [](). El archivo []() contiene los códigos y la carpeta []() los archivos empleados para visualización.  
+_Nota: Todos los archivos descargados y visualizados en Rstudio, así como los códigos empleados para la generación de los gráficos aquí descritos, se encuentran en la carpeta [](). El archivo []() contiene los códigos y la carpeta []() los archivos empleados para visualización._  
 
 # **Notas importantes**  
 ## **Origen de las muestras**  
@@ -38,16 +38,23 @@ Para elaborar algunas gráficas se usarán las siguientes librerías de R: "ggpl
 ## **Conectar a servidor**  
 Conectaremos al servidor de interés utilizando la dirección IP y puerto correspondientes (en este caso conectaremos a POMEO con los datos: IP 200.54.220.141, puerto 22), mediante el software PuTTy y nuestra clave de acceso.  
 
+## **Rstudio**  
+Si tienes una cuenta en Rstudio server, completamente actualizado y compatible con nuevos paquetes o librerías, podrás conectarte directamente, y ahí verás en tiempo real los archivos que irás creando en el servidor a través de PuTTy, y podrás trabajar con ellos para obtener los gráficos que se mencionan en esta práctica. Ahora bien, si el servidor de Rstudio no esta actualizado o es muy viejo, esto puede causarte errores en la codificación que aquí se mostrará y quizá no obtengas los gráficos deseados, si este es tu caso podrás emplear una cuenta en Rstudio cloud, si ya cuentas con ella ¡perfecto!, si no cuentas con una crearla es muy simple y no te tomará mucho tiempo.
+Una vez que tengas claro en dónde trabajaras, deberás ingresar a tu cuenta, iniciar un nuevo proyecto y abrir un archivo ".rmd"/R markdown, en el que descargarás las librerías indicadas en la sección de arriba.  
+
+_Nota: Si decides trabajar en Rstudio cloud deberás descargar todos los archivos de Rstudio server y cargarlos en Rstudio cloud para poder emplearlos._  
+
+
 ## **Configurar bioconda e instalar programas para análisis**  
 1. Para configurar el canal bioconda se debe ejecutar el siguiente comando: `conda config --add channels bioconda`  
    _Al realizar la ejecución simplemente aparecera de nuevo la línea para escribir comandos, en mi caso aparece un mensaje que indica que ya tengo bioconda en mi lista de canales._  
-2. Para la instalación del software gatk4: `conda install -c bioconda gatk4`  
-  _Se realizará la instalación del software, recordar que en un punto pedirá inficar "y" o "yes" para continuar con la instalación._
-3. Para la instalación del software picard tools: `wget https://github.com/broadinstitute/picard/releases/download/2.8.1/picard.jar`  
-4. Para la instalación los software vcftools: `conda install -c bioconda vcftools`  
+2. Para la instalación del software plink: `conda install -c bioconda plink`  
+  _Se realizará la instalación del software, recordar que en un punto pedirá inficar "y" o "yes" para continuar con la instalación._  
+3. Para la instalación del software admixture: `conda install -c bioconda admixture`  
 
 _NOTA: Recuerda que cuando ha terminado de ejecutarse algún comando aparecerá de nuevo la línea (base) dónde te encuentras trabajando, y aparecerá el cuadro de color que te indica que puedes escribir, esa es la señal de que se ha terminado de ejecutar un comando y que puedes continuar trabajando._  
-![CONFIG](https://user-images.githubusercontent.com/80992964/123894080-2bfcc280-d923-11eb-93af-e24be42ec226.png)  
+![CONFIG]((https://user-images.githubusercontent.com/80992964/124395563-6f13b880-dcca-11eb-9f2a-71406dee4ccd.png)  
+
 
 ## **Creación de directorio**  
 Para el caso de esta práctica el directorio y los archivos necesarios para ejecutar esta práctica ya habían sido creados e instalados en mi directorio personal, por lo que solo era necesario ingresar a el y explorar los archivos de trabajo. Usted deberá crear el directorio y para ello dejo las indicaciones completas.
