@@ -1,4 +1,4 @@
-# **Introducción al llamado de variantes de secuencias NGS**  
+# **Introducción al análisis de secuencias NGS: Llamado de variantes**  
 El contenido de la presente práctica fue elaborado por: _Dr. José A. Gallardo_ y _Dr(c) Margarita Rivera_.  
 
 Uno de los principales usos de la secuenciación de próxima generación es descubrir variantes genéticas o mutaciones entre individuos que pertenecen a diferentes poblaciones (Danecek et al., 2011). Con este fin, se han desarrollado tuberías que incluyen el procesamiento de grandes volúmenes de datos como el proyecto internacional [1000 genomas humanos](https://www.internationalgenome.org/), o el [proyecto chileno](http://www.1000genomas.cl/) de 1000 genomas que pretende secuenciar e identificar varianes en 1000 personas y en algunas especies endémicas de interes.  
