@@ -1,4 +1,6 @@
 # **Introducción al análisis de secuencias NGS: Alineamiento**  
+El contenido de la presente práctica fue elaborado por: _Dr. José A. Gallardo_ y _Dr(c) Margarita Rivera_.  
+
 El paso de alineación o mapeo de secuencias cortas reads producto de la secuenciación NGS a un genoma de referencia se considera una parte integral de los análisis de genomas (Pham-Quoc, Kieu-Do, & Thinh, 2019).  
 
 El problema del mapeo de reads consiste en ubicar o alinear dentro de un genoma de referencia previamente secuenciado los millones de reads para luego ensamblarlas a un nuevo genoma (Bak, Bodziony, Migdałek, Pareek, & Żukowski§, 2020) o en el caso de que no exista un genoma de referencia realizar un ensamble de novo.Esta carga de trabajo se la realiza con diferentes enfoques de alineación, sin embargo, al igual que cualquier software, cada enfoque presenta diferentes formas de ejecución y consecuentemente de análisis.  
