@@ -144,11 +144,11 @@ Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio
 ![IndivRelac](https://user-images.githubusercontent.com/80992964/124511345-8373b600-dd9b-11eb-94f6-0785384d8477.png)  
 
 6. Para PCA (Principal Component Analysis): `plink --bfile EU_OC_US.FilteredPrunedUnrel --pca 4 --out EU_OC_US.FilteredPrunedUnrel --allow-extra-chr --chr-set 29`  
-
+![PCA](https://user-images.githubusercontent.com/80992964/124511984-f9c4e800-dd9c-11eb-8d0b-97bd3dc5fe16.png)  
 
 **Gráficos de PCA.**  
 Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio, a continuación revisa la carpeta [](), que contiene el archivo [](), en el cual podrás encontrar los códigos necesarios para generarlos.  
-![PCA](https://user-images.githubusercontent.com/80992964/124507314-2d027980-dd93-11eb-9d54-2f35117713a9.png)
+![graphPCA](https://user-images.githubusercontent.com/80992964/124507314-2d027980-dd93-11eb-9d54-2f35117713a9.png)
 
 
 ## **Análisis de admixture**  
