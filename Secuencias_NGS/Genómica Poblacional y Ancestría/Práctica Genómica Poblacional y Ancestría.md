@@ -65,12 +65,12 @@ Para el caso de esta práctica el directorio y los archivos necesarios para ejec
 3. Explorar el contenido de la carpeta: `ls -l -h`  
 
 _Nota: El directorio "population" contiene los siguientes archivos necesarios para efectuar el análisis poblacional con plink y admixture._  
-_1. **EU_OC_US.vcf*:** Archivo vcf que contiene las muestras provenientes de tres poblaciones de salmón del Atlántico (Salmo salar)._  
-    _1.1. **Europa:** 2_WG0341511-DNA_A02_5408, 3_WG0341511-DNA_A03_5416, 5_WG0341511-DNA_A05_5450._  
-    _1.2. **Oceania:** FR07958834, FR07958842, FR07958850._  
-    _1.3. **Norteamérica:** GNB12-1, GNB12-10, GNB12-11._  
-_2. Adicionalmente, contiene un Script para realizar los diagramas de admixture._  
-    _2.1. Admixture_plot.R: Script que contiene el codigo para crear una función llamada admixtureplot (), utilizada para realizar los diagramas de admixture._  
+**_1. EU_OC_US.vcf*:** Archivo vcf que contiene las muestras provenientes de tres poblaciones de salmón del Atlántico (Salmo salar)._  
+    **_1.1. Europa:** 2_WG0341511-DNA_A02_5408, 3_WG0341511-DNA_A03_5416, 5_WG0341511-DNA_A05_5450._  
+    **_1.2. Oceania:** FR07958834, FR07958842, FR07958850._  
+    **_1.3. Norteamérica:** GNB12-1, GNB12-10, GNB12-11._  
+**_2. Contiene un Script para realizar los diagramas de admixture._**  
+    **_2.1. Admixture_plot.R:** Script que contiene el codigo para crear una función llamada admixtureplot(), utilizada para realizar los diagramas de admixture._  
 ![DIR](https://user-images.githubusercontent.com/80992964/124479605-0ed55300-dd6c-11eb-8d75-934d0bfd6f77.png)  
 
 
@@ -136,9 +136,24 @@ Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio
 
 **Gráficos de PCA.**  
 Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio, a continuación revisa la carpeta [](), que contiene el archivo [](), en el cual podrás encontrar los códigos necesarios para generarlos.  
-
 ![PCA](https://user-images.githubusercontent.com/80992964/124507314-2d027980-dd93-11eb-9d54-2f35117713a9.png)
 
 
 ## **Análisis de admixture**  
+1. Selección al azar del 1% de los marcadores: `plink --bfile EU_OC_US.FilteredPrunedUnrel --thin 0.01 --make-bed --out EU_OC_US.Thinned --allow-extra-chr --chr-set 29`  
+2. Análisis de ancestría de 2 a 6 poblaciones:
+   `for K in` `seq 2 6;`
+   `do`
+   `admixture EU_OC_US.Thinned.bed $K;`
+   `done`  
+_Nota: ADMIXTURE genera 2 archivos: El archivo con extensión ".Q" contiene asignaciones de grupos para cada individuo; el ".P" contiene para cada SNP las frecuencias alélicas de la población._  
+
+
 **Gráficos de ADMIXTURE para 2, 4 y 6 poblaciones.**  
+Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio, a continuación revisa la carpeta [](), que contiene el archivo [](), en el cual podrás encontrar los códigos necesarios para generarlos.  
+
+![para2](https://user-images.githubusercontent.com/80992964/124508366-676d1600-dd95-11eb-9f84-5a793288f3c6.png)  
+
+![para4](https://user-images.githubusercontent.com/80992964/124508324-51f7ec00-dd95-11eb-9123-c4512748ed77.png)  
+
+![para6](https://user-images.githubusercontent.com/80992964/124508403-78b62280-dd95-11eb-82a6-6ffbee09ebff.png)
