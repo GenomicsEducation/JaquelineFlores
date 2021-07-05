@@ -5,7 +5,7 @@ Para el mejor entendimiento de la práctica y las actividades realizadas, te dej
 
 En esta práctica trabajaras de forma simultánea en PuTTy y Rstudio, por lo que encontrarás aquí notas para la preparación de ambas herramientas.  
 
-_Nota: Todos los archivos descargados y visualizados en Rstudio, así como los códigos empleados para la generación de los gráficos aquí descritos, se encuentran en la carpeta [](). El archivo []() contiene los códigos y la carpeta []() los archivos empleados para visualización._  
+_Nota: Todos los archivos descargados y visualizados en Rstudio, así como los códigos empleados para la generación de los gráficos aquí descritos, se encuentran en la carpeta [Genómica Poblacional y Ancestría](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Gen%C3%B3mica%20Poblacional%20y%20Ancestr%C3%ADa). El archivo [Genómica_Poblacional.Rmd](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Gen%C3%B3mica%20Poblacional%20y%20Ancestr%C3%ADa/Gen%C3%B3mica_Poblacional.Rmd) contiene los códigos y la carpeta []() los archivos empleados para visualización._  
 
 # **Notas importantes**  
 ## **Origen de las muestras**  
@@ -108,7 +108,7 @@ _Nota: Si ejecutas un `ls` al terminar de ejecutar los comandos anteriores podr�
 
 
 ## **Gráficos de Heterogocidad individual, Diversidad de nucleótidos y Desequilibrio de ligamiento (LD), y Gráfico de paneles múltiples.**  
-Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio, a continuación revisa la carpeta [](), que contiene el archivo [](), en el cual podrás encontrar los códigos necesarios para generarlos.  
+Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio, a continuación revisa el archivo [Genómica_Poblacional.Rmd](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Gen%C3%B3mica%20Poblacional%20y%20Ancestr%C3%ADa/Gen%C3%B3mica_Poblacional.Rmd), en el cual podrás encontrar los códigos necesarios para generarlos.  
 
 **1. Heterogocidad individual.**  
 ![HETERO](https://user-images.githubusercontent.com/80992964/124485320-0e3fbb00-dd72-11eb-98ac-a33fdde9ffcc.png)  
@@ -147,7 +147,7 @@ Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio
 ![PCA](https://user-images.githubusercontent.com/80992964/124511984-f9c4e800-dd9c-11eb-8d0b-97bd3dc5fe16.png)  
 
 **Gráficos de PCA.**  
-Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio, a continuación revisa la carpeta [](), que contiene el archivo [](), en el cual podrás encontrar los códigos necesarios para generarlos.  
+Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio, a continuación revisa el archivo [Genómica_Poblacional.Rmd](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Gen%C3%B3mica%20Poblacional%20y%20Ancestr%C3%ADa/Gen%C3%B3mica_Poblacional.Rmd), en el cual podrás encontrar los códigos necesarios para generarlos.  
 ![graphPCA](https://user-images.githubusercontent.com/80992964/124507314-2d027980-dd93-11eb-9d54-2f35117713a9.png)  
 
 
@@ -175,7 +175,7 @@ _Nota: ADMIXTURE genera 2 archivos: El archivo con extensión ".Q" contiene asig
 
 
 **Gráficos de ADMIXTURE para 2, 4 y 6 poblaciones.**  
-Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio, a continuación revisa la carpeta [](), que contiene el archivo [](), en el cual podrás encontrar los códigos necesarios para generarlos.  
+Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio, a continuación revisa el archivo [Genómica_Poblacional.Rmd](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Gen%C3%B3mica%20Poblacional%20y%20Ancestr%C3%ADa/Gen%C3%B3mica_Poblacional.Rmd), en el cual podrás encontrar los códigos necesarios para generarlos.  
 
 ![para2](https://user-images.githubusercontent.com/80992964/124508366-676d1600-dd95-11eb-9f84-5a793288f3c6.png)  
 
