@@ -125,15 +125,17 @@ Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio
 
 ## **Análisis de estructura poblacional**  
 1. Para generar el archivo de entrada en formato plink: `plink --vcf EU_OC_US.vcf --recode --out EU_OC_US --double-id --allow-extra-chr --chr-set 29`  
-2. Para generar el archivo de entrada en formato plink binario: `plink --file EU_OC_US --make-bed --out EU_OC_US --allow-extra-chr --chr-set 29`  
-3. Para filtrar basado en equilibrio de Hardy-Weinberg y frecuencia del alelo menor: `plink --bfile EU_OC_US --hwe 0.01 --maf 0.05 --make-bed --out EU_OC_US.Filtered --allow-extra-chr --chr-set 29`  
-4. Para filtrar y excluir marcadores por desequilibrio de ligamiento:  
-4.1. `plink --bfile EU_OC_US.Filtered --indep-pairwise 50 10 0.05 --make-bed --out EU_OC_US.Filtered --allow-extra-chr --chr-set 29`  
-4.2. `plink --bfile EU_OC_US.Filtered --extract EU_OC_US.Filtered.prune.in --make-bed --out EU_OC_US.FilteredPruned --allow-extra-chr --chr-set 29`  
-5. Para filtrar y remover individuos relacionados:  
-5.1. `plink --bfile EU_OC_US.FilteredPruned --rel-cutoff 0.4 --out EU_OC_US.FilteredPruned --allow-extra-chr --chr-set 29`  
-5.2. `plink --bfile EU_OC_US.FilteredPruned --keep EU_OC_US.FilteredPruned.rel.id --make-bed --out EU_OC_US.FilteredPrunedUnrel --allow-extra-chr --chr-set 29`  
-6. Para PCA (Principal Component Analysis): `plink --bfile EU_OC_US.FilteredPrunedUnrel --pca 4 --out EU_OC_US.FilteredPrunedUnrel --allow-extra-chr --chr-set 29`  
+![plink](https://user-images.githubusercontent.com/80992964/124509980-85884580-dd98-11eb-89a6-159ccbf7e2dd.png)  
+
+3. Para generar el archivo de entrada en formato plink binario: `plink --file EU_OC_US --make-bed --out EU_OC_US --allow-extra-chr --chr-set 29`  
+4. Para filtrar basado en equilibrio de Hardy-Weinberg y frecuencia del alelo menor: `plink --bfile EU_OC_US --hwe 0.01 --maf 0.05 --make-bed --out EU_OC_US.Filtered --allow-extra-chr --chr-set 29`  
+5. Para filtrar y excluir marcadores por desequilibrio de ligamiento:  
+6.1. `plink --bfile EU_OC_US.Filtered --indep-pairwise 50 10 0.05 --make-bed --out EU_OC_US.Filtered --allow-extra-chr --chr-set 29`  
+7.2. `plink --bfile EU_OC_US.Filtered --extract EU_OC_US.Filtered.prune.in --make-bed --out EU_OC_US.FilteredPruned --allow-extra-chr --chr-set 29`  
+8. Para filtrar y remover individuos relacionados:  
+9.1. `plink --bfile EU_OC_US.FilteredPruned --rel-cutoff 0.4 --out EU_OC_US.FilteredPruned --allow-extra-chr --chr-set 29`  
+10.2. `plink --bfile EU_OC_US.FilteredPruned --keep EU_OC_US.FilteredPruned.rel.id --make-bed --out EU_OC_US.FilteredPrunedUnrel --allow-extra-chr --chr-set 29`  
+11. Para PCA (Principal Component Analysis): `plink --bfile EU_OC_US.FilteredPrunedUnrel --pca 4 --out EU_OC_US.FilteredPrunedUnrel --allow-extra-chr --chr-set 29`  
 
 **Gráficos de PCA.**  
 Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio, a continuación revisa la carpeta [](), que contiene el archivo [](), en el cual podrás encontrar los códigos necesarios para generarlos.  
