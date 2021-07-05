@@ -148,16 +148,28 @@ Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio
 
 **Gráficos de PCA.**  
 Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio, a continuación revisa la carpeta [](), que contiene el archivo [](), en el cual podrás encontrar los códigos necesarios para generarlos.  
-![graphPCA](https://user-images.githubusercontent.com/80992964/124507314-2d027980-dd93-11eb-9d54-2f35117713a9.png)
+![graphPCA](https://user-images.githubusercontent.com/80992964/124507314-2d027980-dd93-11eb-9d54-2f35117713a9.png)  
 
 
 ## **Análisis de admixture**  
 1. Selección al azar del 1% de los marcadores: `plink --bfile EU_OC_US.FilteredPrunedUnrel --thin 0.01 --make-bed --out EU_OC_US.Thinned --allow-extra-chr --chr-set 29`  
+![azar](https://user-images.githubusercontent.com/80992964/124512349-bcad2580-dd9d-11eb-8078-956116d17dd4.png)  
+
 2. Análisis de ancestría de 2 a 6 poblaciones:
    `for K in` `seq 2 6;`
    `do`
    `admixture EU_OC_US.Thinned.bed $K;`
    `done`  
+![ancestria](https://user-images.githubusercontent.com/80992964/124512401-e2d2c580-dd9d-11eb-9613-186ac55f516e.png)  
+
+![ancestria1](https://user-images.githubusercontent.com/80992964/124512461-0b5abf80-dd9e-11eb-8bae-81adbf8e0e3e.png)  
+
+![ancestria2](https://user-images.githubusercontent.com/80992964/124512484-1877ae80-dd9e-11eb-8334-9b37c77e372b.png)  
+
+![ancestria3](https://user-images.githubusercontent.com/80992964/124512503-2299ad00-dd9e-11eb-8244-5bd6d8b682c7.png)  
+
+![ancestria4](https://user-images.githubusercontent.com/80992964/124512526-3218f600-dd9e-11eb-896c-a6345ee79e06.png)
+
 
 _Nota: ADMIXTURE genera 2 archivos: El archivo con extensión ".Q" contiene asignaciones de grupos para cada individuo; el ".P" contiene para cada SNP las frecuencias alélicas de la población._  
 
