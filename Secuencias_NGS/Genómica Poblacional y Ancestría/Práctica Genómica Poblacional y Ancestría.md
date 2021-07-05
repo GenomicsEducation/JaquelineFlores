@@ -65,12 +65,12 @@ Para el caso de esta práctica el directorio y los archivos necesarios para ejec
 3. Explorar el contenido de la carpeta: `ls -l -h`  
 
 _Nota: El directorio "population" contiene los siguientes archivos necesarios para efectuar el análisis poblacional con plink y admixture._  
-**_1. EU_OC_US.vcf:** Archivo vcf que contiene las muestras provenientes de tres poblaciones de salmón del Atlántico (Salmo salar)._  
-    **_1.1. Europa:** 2_WG0341511-DNA_A02_5408, 3_WG0341511-DNA_A03_5416, 5_WG0341511-DNA_A05_5450._  
-    **_1.2. Oceania:** FR07958834, FR07958842, FR07958850._  
-    **_1.3. Norteamérica:** GNB12-1, GNB12-10, GNB12-11._  
-**_2. Contiene un Script para realizar los diagramas de admixture._**  
-    **_2.1. Admixture_plot.R:** Script que contiene el codigo para crear una función llamada admixtureplot(), utilizada para realizar los diagramas de admixture._  
+**1. EU_OC_US.vcf:** Archivo vcf que contiene las muestras provenientes de tres poblaciones de salmón del Atlántico _(Salmo salar)_.  
+    **1.1. Europa:** 2_WG0341511-DNA_A02_5408, 3_WG0341511-DNA_A03_5416, 5_WG0341511-DNA_A05_5450._  
+    **1.2. Oceania:** FR07958834, FR07958842, FR07958850.  
+    **1.3. Norteamérica:** GNB12-1, GNB12-10, GNB12-11.  
+**2. Contiene un Script para realizar los diagramas de admixture.**  
+    **2.1. Admixture_plot.R:** Script que contiene el codigo para crear una función llamada admixtureplot(), utilizada para realizar los diagramas de admixture.  
 ![DIR](https://user-images.githubusercontent.com/80992964/124479605-0ed55300-dd6c-11eb-8d75-934d0bfd6f77.png)  
 
 
