@@ -82,7 +82,7 @@ A continuación, estimaremos el número de sitios heterocigotos para cada indivi
 ![DIVER](https://user-images.githubusercontent.com/80992964/124483491-04b55380-dd70-11eb-8aeb-165153fd8168.png)  
 
 
-**Calcular la diversidad en una ventana no superpuesta de 200 kb para cada individuo.**  
+## **Calcular la diversidad en una ventana no superpuesta de 200 kb para cada individuo.**  
 _**Para la población de Europa**_: `vcftools --vcf EU_OC_US.vcf --window-pi 200000 --indv 2_WG0341511-DNA_A02_5408 --indv 3_WG0341511-DNA_A03_5416 --indv 5_WG0341511-DNA_A05_5450 --out EU`  
 ![EUROPA](https://user-images.githubusercontent.com/80992964/124483722-47772b80-dd70-11eb-9945-ecabff1475bc.png)  
 
@@ -93,7 +93,7 @@ _**Para la población de Norteamérica**_: `vcftools --vcf EU_OC_US.vcf --window
 ![NORTH](https://user-images.githubusercontent.com/80992964/124484061-a2a91e00-dd70-11eb-9a6d-e0db10f83cd0.png)  
 
 
-**Calcular el desequilibrio de ligamiento (LD).**  
+## **Calcular el desequilibrio de ligamiento (LD).**  
 _**Para la población de Europa**_: `vcftools --vcf EU_OC_US.vcf --geno-r2 --chr 1 --ld-window-bp 100000 --min-r2 0.001 --indv 2_WG0341511-DNA_A02_5408 --indv 3_WG0341511-DNA_A03_5416 --indv 5_WG0341511-DNA_A05_5450 --out EU`  
 ![EUROPA2](https://user-images.githubusercontent.com/80992964/124484265-d8e69d80-dd70-11eb-82b6-e40a3bd135e2.png)  
 
@@ -107,7 +107,7 @@ _Nota: Si ejecutas un `ls` al terminar de ejecutar los comandos anteriores podr�
 ![LS](https://user-images.githubusercontent.com/80992964/124485019-c15be480-dd71-11eb-8c63-d5cf60bc17b4.png)  
 
 
-**Gráficos de Heterogocidad individual, Diversidad de nucleótidos y Desequilibrio de ligamiento (LD), y Gráfico de paneles múltiples.**  
+## **Gráficos de Heterogocidad individual, Diversidad de nucleótidos y Desequilibrio de ligamiento (LD), y Gráfico de paneles múltiples.**  
 Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio, a continuación revisa la carpeta [](), que contiene el archivo [](), en el cual podrás encontrar los códigos necesarios para generarlos.
 
 **1. Heterogocidad individual.**  
