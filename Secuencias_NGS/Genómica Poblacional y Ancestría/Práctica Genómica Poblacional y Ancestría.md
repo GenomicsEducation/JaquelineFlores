@@ -55,13 +55,25 @@ _Nota: Si decides trabajar en Rstudio cloud deberás descargar todos los archivo
 3. Para la instalación del software admixture: `conda install -c bioconda admixture`  
 
 _NOTA: Recuerda que cuando ha terminado de ejecutarse algún comando aparecerá de nuevo la línea (base) dónde te encuentras trabajando, y aparecerá el cuadro de color que te indica que puedes escribir, esa es la señal de que se ha terminado de ejecutar un comando y que puedes continuar trabajando._  
-![CONFIG]()  
+![CONFIG](https://user-images.githubusercontent.com/80992964/124478558-ed279c00-dd6a-11eb-963f-e29eaa8889d5.png)  
 
 
 ## **Creación de directorio**  
 Para el caso de esta práctica el directorio y los archivos necesarios para ejecutar esta práctica ya habían sido creados e instalados en mi directorio personal, por lo que solo era necesario ingresar a el y explorar los archivos de trabajo. Usted deberá crear el directorio y para ello dejo las indicaciones completas.
-1. Crear una carpeta denominada "variant_call" en tu usuario de home2: `mkdir variant_call`  
-2. Ingresar a la carpeta: `cd variant_call`  
+1. Crear una carpeta denominada "variant_call" en tu usuario de home2: `mkdir population`  
+2. Ingresar a la carpeta: `cd population`  
+3. Explorar el contenido de la carpeta: `ls -l -h`  
+
+_Nota: El directorio "population" contiene los siguientes archivos necesarios para efectuar el análisis poblacional con plink y admixture._  
+_1. **EU_OC_US.vcf*:** Archivo vcf que contiene las muestras provenientes de tres poblaciones de salmón del Atlántico (Salmo salar)._  
+   _1.1. **Europa:** 2_WG0341511-DNA_A02_5408, 3_WG0341511-DNA_A03_5416, 5_WG0341511-DNA_A05_5450._  
+   _1.2. **Oceania:** FR07958834, FR07958842, FR07958850._  
+   _1.3. **Norteamérica:** GNB12-1, GNB12-10, GNB12-11._  
+_2. Adicionalmente, contiene un Script para realizar los diagramas de admixture._  
+   _2.1. Admixture_plot.R: Script que contiene el codigo para crear una función llamada admixtureplot (), utilizada para realizar los diagramas de admixture._  
+
+![DIR](https://user-images.githubusercontent.com/80992964/124479605-0ed55300-dd6c-11eb-8d75-934d0bfd6f77.png)  
+
 
 ## **Análisis de diversidad**  
 Estimar el numero de sitios heterocigotos para cada individuo y la heterocigosidad observada y esperada para cada marcador. Utilice `ls`, `-l`, `head`, `cat`, `less`, etc., segun corresponda, para explorar los archivos de salida de cada uno de estos analisis.  
