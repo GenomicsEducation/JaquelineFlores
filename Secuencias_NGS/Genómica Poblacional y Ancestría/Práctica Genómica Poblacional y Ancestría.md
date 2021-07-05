@@ -3,7 +3,7 @@ El contenido de la presente práctica fue elaborado por: _Dr. José A. Gallardo_
 
 Para el mejor entendimiento de la práctica y las actividades realizadas, te dejo aquí información de utilidad que a mi también me fue proporcionada para realizar la presente práctica.  
 
-En esta práctica trabajaras de forma simultanea en PuTTy y Rstudio, por lo que encontrarás aquí notas para la preparación de ambas herramientas.  
+En esta práctica trabajaras de forma simultánea en PuTTy y Rstudio, por lo que encontrarás aquí notas para la preparación de ambas herramientas.  
 
 _Nota: Todos los archivos descargados y visualizados en Rstudio, así como los códigos empleados para la generación de los gráficos aquí descritos, se encuentran en la carpeta [](). El archivo []() contiene los códigos y la carpeta []() los archivos empleados para visualización._  
 
