@@ -71,7 +71,6 @@ _1. **EU_OC_US.vcf*:** Archivo vcf que contiene las muestras provenientes de tre
     _1.3. **Norteamérica:** GNB12-1, GNB12-10, GNB12-11._  
 _2. Adicionalmente, contiene un Script para realizar los diagramas de admixture._  
     _2.1. Admixture_plot.R: Script que contiene el codigo para crear una función llamada admixtureplot (), utilizada para realizar los diagramas de admixture._  
-
 ![DIR](https://user-images.githubusercontent.com/80992964/124479605-0ed55300-dd6c-11eb-8d75-934d0bfd6f77.png)  
 
 
@@ -108,7 +107,7 @@ _Nota: Si ejecutas un `ls` al terminar de ejecutar los comandos anteriores podr�
 
 
 ## **Gráficos de Heterogocidad individual, Diversidad de nucleótidos y Desequilibrio de ligamiento (LD), y Gráfico de paneles múltiples.**  
-Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio, a continuación revisa la carpeta [](), que contiene el archivo [](), en el cual podrás encontrar los códigos necesarios para generarlos.
+Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio, a continuación revisa la carpeta [](), que contiene el archivo [](), en el cual podrás encontrar los códigos necesarios para generarlos.  
 
 **1. Heterogocidad individual.**  
 ![HETERO](https://user-images.githubusercontent.com/80992964/124485320-0e3fbb00-dd72-11eb-98ac-a33fdde9ffcc.png)  
@@ -119,13 +118,27 @@ Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio
 **3. Desequilibrio de ligamiento (LD).**  
 ![DESEQ](https://user-images.githubusercontent.com/80992964/124485989-bc4b6500-dd72-11eb-80ed-f31df4545ac0.png)  
 
-**4. Gráfico de paneles múltiples.**  
-![PANELES](https://user-images.githubusercontent.com/80992964/124486157-eb61d680-dd72-11eb-8577-af39a1fa4b67.png)
+**4. Paneles múltiples.**  
+![PANELES](https://user-images.githubusercontent.com/80992964/124486157-eb61d680-dd72-11eb-8577-af39a1fa4b67.png)  
 
 
 ## **Análisis de estructura poblacional**  
+1. Para generar el archivo de entrada en formato plink: `plink --vcf EU_OC_US.vcf --recode --out EU_OC_US --double-id --allow-extra-chr --chr-set 29`  
+2. Para generar el archivo de entrada en formato plink binario: `plink --file EU_OC_US --make-bed --out EU_OC_US --allow-extra-chr --chr-set 29`  
+3. Para filtrar basado en equilibrio de Hardy-Weinberg y frecuencia del alelo menor: `plink --bfile EU_OC_US --hwe 0.01 --maf 0.05 --make-bed --out EU_OC_US.Filtered --allow-extra-chr --chr-set 29`  
+4. Para filtrar y excluir marcadores por desequilibrio de ligamiento:  
+  4.1. `plink --bfile EU_OC_US.Filtered --indep-pairwise 50 10 0.05 --make-bed --out EU_OC_US.Filtered --allow-extra-chr --chr-set 29`  
+  4.2. `plink --bfile EU_OC_US.Filtered --extract EU_OC_US.Filtered.prune.in --make-bed --out EU_OC_US.FilteredPruned --allow-extra-chr --chr-set 29`  
+5. Para filtrar y remover individuos relacionados:  
+  5.1. `plink --bfile EU_OC_US.FilteredPruned --rel-cutoff 0.4 --out EU_OC_US.FilteredPruned --allow-extra-chr --chr-set 29`  
+  5.2. `plink --bfile EU_OC_US.FilteredPruned --keep EU_OC_US.FilteredPruned.rel.id --make-bed --out EU_OC_US.FilteredPrunedUnrel --allow-extra-chr --chr-set 29`  
+6. Para PCA (Principal Component Analysis): `plink --bfile EU_OC_US.FilteredPrunedUnrel --pca 4 --out EU_OC_US.FilteredPrunedUnrel --allow-extra-chr --chr-set 29`  
+
 **Gráficos de PCA.**  
+Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio, a continuación revisa la carpeta [](), que contiene el archivo [](), en el cual podrás encontrar los códigos necesarios para generarlos.  
+
+![PCA](https://user-images.githubusercontent.com/80992964/124507314-2d027980-dd93-11eb-9d54-2f35117713a9.png)
 
 
 ## **Análisis de admixture**  
-**Gráficos de ADMIXTURE para 2, 4 y 6 poblaciones.**
+**Gráficos de ADMIXTURE para 2, 4 y 6 poblaciones.**  
