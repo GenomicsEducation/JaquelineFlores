@@ -51,7 +51,7 @@ _Nota: Si decides trabajar en Rstudio cloud deberás descargar todos los archivo
 1. Para configurar el canal bioconda se debe ejecutar el siguiente comando: `conda config --add channels bioconda`  
    _Al realizar la ejecución simplemente aparecera de nuevo la línea para escribir comandos, en mi caso aparece un mensaje que indica que ya tengo bioconda en mi lista de canales._  
 2. Para la instalación del software plink: `conda install -c bioconda plink`  
-  _Se realizará la instalación del software, recordar que en un punto pedirá inficar "y" o "yes" para continuar con la instalación._  
+  _Se realizará la instalación del software, recordar que en un punto pedirá indicar "y" o "yes" para continuar con la instalación._  
 3. Para la instalación del software admixture: `conda install -c bioconda admixture`  
 
 _NOTA: Recuerda que cuando ha terminado de ejecutarse algún comando aparecerá de nuevo la línea (base) dónde te encuentras trabajando, y aparecerá el cuadro de color que te indica que puedes escribir, esa es la señal de que se ha terminado de ejecutar un comando y que puedes continuar trabajando._  
