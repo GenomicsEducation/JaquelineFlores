@@ -56,7 +56,6 @@ Conectaremos al servidor de interés utilizando la dirección IP y puerto corres
 _NOTA: Recuerda que cuando ha terminado de ejecutarse algún comando aparecerá de nuevo la línea (base) dónde te encuentras trabajando, y aparecerá el cuadro de color que te indica que puedes escribir, esa es la señal de que se ha terminado de ejecutar un comando y que puedes continuar trabajando._  
 ![CONFIG](https://user-images.githubusercontent.com/80992964/123894080-2bfcc280-d923-11eb-93af-e24be42ec226.png)  
 
-
 ## **Creación de directorio**  
 Para el caso de esta práctica el directorio y los archivos necesarios para ejecutar esta práctica ya habían sido creados e instalados en mi directorio personal, por lo que solo era necesario ingresar a el y explorar los archivos de trabajo. Usted deberá crear el directorio y para ello dejo las indicaciones completas.
 1. Crear una carpeta denominada "variant_call" en tu usuario de home2: `mkdir variant_call`  
