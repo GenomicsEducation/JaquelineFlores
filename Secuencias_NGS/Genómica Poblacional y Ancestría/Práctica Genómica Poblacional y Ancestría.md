@@ -80,7 +80,7 @@ A continuación, estimaremos el número de sitios heterocigotos para cada indivi
 1. Número de heterocigotos: `vcftools --vcf EU_OC_US.vcf --het --out EU_OC_US`  
 2. Número de heterocigosidad: `vcftools --vcf EU_OC_US.vcf --hardy --out EU_OC_US`  
 
-![DIVER](https://user-images.githubusercontent.com/80992964/124482493-f450a900-dd6e-11eb-9870-a6881e579fc2.png)  
+![DIVER](https://user-images.githubusercontent.com/80992964/124483491-04b55380-dd70-11eb-8aeb-165153fd8168.png)  
 
 
 **Calcular la diversidad en una ventana no superpuesta de 200 kb para cada individuo.**  
