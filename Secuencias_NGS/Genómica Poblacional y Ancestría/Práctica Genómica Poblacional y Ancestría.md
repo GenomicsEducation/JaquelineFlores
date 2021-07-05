@@ -147,6 +147,7 @@ Para realizar los gráficos y tablas aquí mostrados deberás ingresar a Rstudio
    `do`
    `admixture EU_OC_US.Thinned.bed $K;`
    `done`  
+
 _Nota: ADMIXTURE genera 2 archivos: El archivo con extensión ".Q" contiene asignaciones de grupos para cada individuo; el ".P" contiene para cada SNP las frecuencias alélicas de la población._  
 
 
