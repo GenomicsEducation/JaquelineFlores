@@ -1,0 +1,158 @@
+---
+title: "GWAS y Selección Genómica"
+author: "Jaqueline Flores Salinas"
+date: "8/7/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(utils)
+library(rrBLUP)
+library(ggplot2)
+```
+
+```{r, fig.cap= "Exploración de archivo 'geno.txt' con comandos `dim()` y `head()`."}
+# Importar archivos de genotipos (geno.txt) y fenotipos (pheno.txt).
+
+geno <- read.delim("geno.txt", sep = "\t", dec = ",", header = T)
+pheno <- read.delim("pheno.txt", sep = "\t", dec = ",", header = T)
+
+# Explorar datos del archivo geno
+dim(geno)
+head(geno[1:6,1:6])
+```
+
+¿Cómo están codificados los genotipos de cada SNP?
+Los genotipos están codificados como -1, 0 y 1, dónde el -1 hace referencia al homocigoto del alelo menor, el 0 hace referencia al heterocigoto, y el 1 hace referencia al homocigoto del alelo mayor.
+
+¿Observa heterocigotos?
+Si se observan heterocigotos. De los 3 animales que se observan, el animal 2 es el que mayormente presenta heterocigosis.
+```{r, fig.cap= "Exploración de archivo 'pheno.txt' con comandos `dim()` y `head()`."}
+# Explorar datos del archivo pheno
+dim(pheno)
+head(pheno)
+```
+
+```{r, fig.cap= "Figura 1. Histograma de la variable cuantitativa y del archivo 'pheno.txt'."}
+# Realizar un histograma de la variable cuantitativa y del archivo pheno
+
+hist(pheno$y, main = "Variable vs Frecuencias", col = "salmon")
+```
+
+```{r, fig.cap= "Creación de matriz de parentesco genómico y exploración de la misma."}
+# Calcular y graficar matriz de parentesco genómico según método de Van Raden para los 200 animales.
+# La función A.mat permite estimar una matriz de relaciones aditivas o matriz de parentesco genómico.
+
+A <- A.mat(geno[4:203]) 
+
+# Explorar matriz
+dim(A)
+head(A[1:6,1:6])
+```
+
+```{r, fig.cap= "Figura 2. Histograma de matriz de parentesco genómico."}
+# Explorar matriz con histograma
+hist(A, main = "Parentesco genómico", col = "aquamarine3")
+```
+
+```{r, fig.cap= "Figura 3. Histograma de nivel de endogamia."}
+# Crear objeto con la diagonal de la matriz y graficar. Dado que la diagonal contiene el parentesco del individuo con sigo mismo esto permite estimar el coeficiente de endogamia de la población.
+
+endogamia <- diag(A)
+hist(endogamia, main = "Histograma de endogamia", col = "pink")
+```
+
+#¿Cuál es el nivel de endogamia promedio de esta población?.
+```{r, fig.cap= "Calculo del promedio del nivel de endogamia de la población analizada."}
+mean(endogamia)
+```
+A partir del calculo del promedio, y de visualizar el histograma podemos determinar que el nivel promedio de endogamia de la población analizada, es de 1. Como consideramos la diagonal de la matriz, cuyo valor es de 1 porque hace referencia al parentesco de los individuos con sigo mismos, entonces podríamos decir que este promedio de 1 hace referencia a dicho valor.
+
+Ahora bien, entendemos por endogamia la probabilidad de que los dos genes o alelos de un locus cualquiera, de dos individuos tomados al azar, sean idénticos por descendencia, es decir, por proceder de un mismo alelo ancestral que se encuentra presente en ambos progenitores, y con ello podemos responder lo siguiente:
+
+¿Que significa un valor de endogamia de 1.1 y de 0.9?
+Este valor nos indica que los individuos en cuestión tienen un 10% de probabilidad de ser endogamico, es decir de que el alelo en cuestión sea identico por desendencia.
+
+```{r, fig.cap="Figura 4. Gráfico de análisis GWAS."}
+score <- GWAS(pheno,geno, plot=TRUE)
+class(score)
+```
+
+¿Cuantos QTLs fueron detectados por el análisis GWAS?, ¿En qué cromosomas se encuentran?
+Visualmente es posible determinar que fueron detectados 2 QTLs, uno en el cromosoma 3 y otro en el cromosoma 10. 
+
+```{r, fig.cap="Exploración del objeto score para analizar el efecto de los QTLs detectados por el GWAS."}
+# Explore el objeto View(scores). Se muestran los valores de -log.
+
+head(score)
+View(score)
+dplyr::filter(score, y > 5)
+```
+
+¿Qué SNP fueron significativos?
+Según el análisis GWAS, se identificaron dos QTLs, uno en el cromosoma 3 (snp300) y uno en el cromosoma 10 (snp1000), tal como se visualizó en el gráfico obtenido en el análisis GWAS. 
+
+
+¿Con que nivel de significancia se concluye que fueron significativos los QTLs?
+Ambos QTLs fueron significativos con un valor de p menor a 0.05
+```{r, fig.cap="Conversión de valores -log a exponente, de los QTLs identificados en el análisis."}
+# snp300
+exp(-7.5047236)
+```
+
+```{r, fig.cap="Conversión de valores -log a exponente, de los QTLs identificados en el análisis."}
+# snp1000
+exp(-8.5080997)
+```
+
+```{r}
+# Si probamos el log de los valores obtenidos anteriormente, obtendremos los valores de -log antes mostrados respectivamente para los dos QTLs encontrados en el análisis GWAS.
+
+#log(0.000550478)
+#log(0.000201827)
+```
+
+```{r, fig.cap="Creación de objeto en formato de tabla con los datos de los dos SNPs significativos, identificados como QTLs por el análisis de GWAS."}
+
+# Sugerencia: Transponga la matriz geno y cree un nuevo data.frame solo con los snp signiticativos, luego una al data.frame el rasgo cuantitativo.
+
+t_geno_300 <- t(geno[300,4:203])+1
+t_geno_1000 <- t(geno[1000,4:203])+1
+qtl <- data.frame(t_geno_300,t_geno_1000,pheno$y)
+
+head(qtl)
+```
+
+```{r, fig.cap="Figura 5. Gráfico de regresión lineal de fenotipo en función de los genotipo para el SNP300."}
+
+qtl.1 <- ggplot(qtl, aes(x = X300, y = pheno.y))
+qtl.1 + geom_point() + xlab("snp 300") +  ylab("Pheno")+ geom_smooth(method=lm)
+```
+
+```{r, fig.cap="Figura 6. Gráfico de regresión lineal de fenotipo en función de los genotipo para el SNP1000."}
+
+## `geom_smooth()` using formula 'y ~ x'
+
+qtl.2 <- ggplot(qtl, aes(x = X1000, y = pheno.y))
+qtl.2 + geom_point() + xlab("snp 1000") +  ylab("Pheno")+ geom_smooth(method=lm)
+```
+
+```{r, fig.cap="Estimación del efecto (beta o pendiente) del QTL del SNP300 usando un modelo lineal `lm()`."}
+
+lm.qtl.300 <- lm(pheno.y ~ X300, data = qtl)
+summary(lm.qtl.300)
+```
+
+```{r}
+cat("El efecto del snp300 sobre el rasgo cuantitativo 1.8121")
+```
+
+```{r, fig.cap="Estimación del efecto (beta o pendiente) del QTL del SNP1000 usando un modelo lineal `lm()`."}
+lm.qtl.1000 <- lm(pheno.y ~ X1000, data = qtl)
+summary(lm.qtl.1000)
+```
+
+```{r}
+cat("El efecto del snp1000 sobre el rasgo cuantitativo 1.8549")
+```
