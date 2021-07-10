@@ -26,7 +26,7 @@ Deberás ingresar a tu cuenta de Rstudio cloud, con tu usuario y contraseña.
 
 ## **Importar y explorar archivo de genotipos y fenotipos**  
 1. Importe los datos "geno" y "pheno": Importe el archivo de genotipos "geno.txt" y fenotipos "pheno.txt" usando la función `read.delim`.  
-_Nota: podrás encontrar estos archivos en la carpeta [GWAS Rstudio]()._  
+_Nota: podrás encontrar estos archivos en la carpeta [GWAS Rstudio](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Asociaci%C3%B3n%20Gen%C3%B3mica/GWAS%20Rstudio)._  
 
 2. Explorar datos: Luego realice un análisis exploratorio de ambos set de datos con las funciones `head()`, `dim()`. También realice un histograma de la variable cuantitativa y del archivo pheno, use la función `hist()`.  
 
