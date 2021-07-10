@@ -1,7 +1,7 @@
 # **Introducción a los Estudios de Asociación Genómica**  
 El contenido de la presente práctica fue elaborado por: _Dr. José A. Gallardo_.  
 
-A continuación encontrarás una breve guía de la práctica realizada, y una descripción simple de los resultados que podrás observar, pero para un seguimiento de la práctica completa podrás encontrar en la carpeta [Asociación Genómica](), el archivo [GWAS y Selección Genómica.Rmd](), que contiene el script y notas para guiarte en la práctica en Rstudio, y el cual podrás cargar en Rstudio cloud. También encontrarás la carpeta [GWAS Rstudio](), que contiene los archivos empleados en Rstudio._  
+A continuación encontrarás una breve guía de la práctica realizada, y una descripción simple de los resultados que podrás observar, pero para un seguimiento de la práctica completa podrás encontrar en la carpeta [Asociación Genómica](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Asociaci%C3%B3n%20Gen%C3%B3mica), el archivo [GWAS y Selección Genómica.Rmd](https://github.com/GenomicsEducation/JaquelineFlores/blob/main/Secuencias_NGS/Asociaci%C3%B3n%20Gen%C3%B3mica/GWAS%20y%20Selecci%C3%B3n%20Gen%C3%B3mica.Rmd), que contiene el script y notas para guiarte en la práctica en Rstudio, y el cual podrás cargar en Rstudio cloud. También encontrarás la carpeta [GWAS Rstudio](https://github.com/GenomicsEducation/JaquelineFlores/tree/main/Secuencias_NGS/Asociaci%C3%B3n%20Gen%C3%B3mica/GWAS%20Rstudio), que contiene los archivos empleados en Rstudio._  
 
 
 # **Notas importantes**  
